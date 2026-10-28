@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth scroll-pt-20">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYXGBLK178"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FYXGBLK178');
+    </script>
+    
+    <meta charset="UTF-8">
+    <!-- Стандартная настройка адаптивности (зум разрешен для удобства пользователей) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторские виброакустические практики | Sound Healing</title>
+    <meta name="description" content="Глубокое восстановление через вибрацию и звук в Покхаре. Звуковая терапия, поющие чаши, Аюрведа и Джйотиш от сертифицированных мастеров Екатерины и Дмитрия Савиных.">
+    
+    <!-- Подключаем шрифты (Cormorant Garamond и Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Настройка Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-bg {
+            background-image: url('media/hero-bg.webp'); /* Ссылка на фон главного экрана */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <!-- Open Graph (RU) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://savinsoundspace.com/">
+    <meta property="og:title" content="Savin Sound Space | Звукотерапия и Аюрведа">
+    <meta property="og:description" content="Комплексный подход к восстановлению внутреннего баланса: гималайские поющие чаши, аюрведа, джйотиш и йога.">
+    <meta property="og:image" content="https://savinsoundspace.com/media/og-sound.jpg">
+
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden">
+
+<!-- ЕДИНАЯ ВЕРХНЯЯ ПАНЕЛЬ -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-sm border-b border-white/5">
+        <div class="w-full mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Логотип и Заголовок -->
+            <!-- ИСПРАВЛЕНО: добавлено min-w-0 и mr-4, чтобы текст мог сжиматься -->
+            <a href="#" class="flex items-center gap-2 sm:gap-4 group h-full relative z-10 min-w-0 mr-4">
+                <!-- Увеличили масштаб до 125% и добавили origin-left. shrink-0 оставлен только для картинки -->
+                <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-12 sm:h-full w-auto object-contain transition-transform duration-300 group-hover:scale-125 origin-left shrink-0">
+                
+                <!-- ИСПРАВЛЕНО: text-[12px] на мобильных, truncate вместо whitespace-nowrap -->
+                <div class="flex flex-col justify-center min-w-0">
+                    <span class="font-serif text-white text-[12px] sm:text-[15px] lg:text-[20px] tracking-[0.1em] uppercase leading-none truncate">Екатерина & Дмитрий Савины</span>
+                    <span class="font-sans text-white text-[7px] sm:text-[9px] lg:text-[10px] tracking-[0.2em] uppercase mt-1 lg:mt-1.5 truncate">Сертифицированные мастера</span>
+                </div>
+            </a>
+
+            <!-- ДЕСКТОПНОЕ МЕНЮ (Показываем ТОЛЬКО на широких экранах - класс xl:flex) -->
+            <div class="hidden xl:flex items-center gap-4 2xl:gap-6 ml-auto shrink-0">
+                <a href="index.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Главная<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="#about" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">О нас<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="#services" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Услуги<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="#instruments" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Инструменты<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="#reviews" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Отзывы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="#faq" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Ответы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="gallery.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Галерея<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                
+                <!-- Кнопка Записаться -->
+                <a href="#contacts" class="bg-teal-700 hover:bg-teal-600 text-white text-[10px] 2xl:text-xs font-sans font-medium tracking-widest uppercase px-5 py-2.5 rounded-full transition-all ml-2 whitespace-nowrap">
+                    Записаться
+                </a>
+
+               <!-- Кнопка EN -->
+<a href="index-en.html" class="text-white bg-slate-800/50 hover:bg-teal-700 border border-slate-500 hover:border-teal-600 text-[10px] 2xl:text-xs font-sans font-medium tracking-widest transition-all rounded-full px-4 py-2.5 ml-1 flex items-center justify-center">
+    EN
+</a>
+
+            <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
+            <!-- ИСПРАВЛЕНО: добавлен shrink-0, чтобы кнопка не пропадала -->
+            <button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+
+        </div>
+        
+       <!-- АККУРАТНОЕ МОБИЛЬНОЕ МЕНЮ (Выпадает сверху) -->
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-slate-950/95 backdrop-blur-md border-b border-white/5 flex-col items-center py-8 gap-6 shadow-2xl xl:hidden">
+            <a href="index.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Главная</a>
+            <a href="#about" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">О нас</a>
+            <a href="#services" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Услуги</a>
+            <a href="#instruments" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Инструменты</a>
+            <a href="#reviews" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Отзывы</a>
+            <a href="#faq" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Ответы</a>
+            
+            <!-- НОВАЯ ССЫЛКА НА ГАЛЕРЕЮ -->
+            <a href="gallery.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Галерея</a>
+            
+            <div class="w-12 h-px bg-slate-800 my-2"></div>
+            
+            <a href="#contacts" class="mobile-link bg-teal-700 hover:bg-teal-600 text-white text-xs font-sans font-medium tracking-widest uppercase px-8 py-3 rounded-full transition-colors">
+                Записаться
+            </a>
+            <a href="index-en.html" class="text-slate-400 hover:text-white text-xs font-sans tracking-widest uppercase mt-2 transition-colors">
+                EN (English)
+            </a>
+        </div>
+    </nav>
+    <!-- 1. HERO СЕГМЕНТ (Главный экран) -->
+    <section class="bg-[url('media/hero-bg.webp')] bg-cover bg-center bg-no-repeat min-h-screen relative flex items-end">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        
+       <!-- Локация -->
+        <div class="absolute top-32 right-6 z-20 hidden md:inline-flex items-center gap-3 bg-black/40 border border-slate-500/50 px-5 py-2 rounded-full backdrop-blur-sm">
+            <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
+            </span>
+            <span class="text-slate-300 text-sm tracking-wide font-sans font-light">📍 Сейчас мы находимся: Покхара, Непал</span>
+        </div>
+        
+        <!-- Уменьшили нижний отступ (pb-8 md:pb-12), чтобы опустить блок ниже -->
+        <div class="relative max-w-5xl mx-auto px-6 pb-8 md:pb-12 text-center w-full">
+           <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-medium text-white leading-tight">
+                Глубокое восстановление <br> через вибрацию и звук
+            </h1>
+            
+            <div class="pt-12 -translate-y-1 md:-translate-y-2">
+                <!-- Описание с нужным интервалом и трекингом -->
+                <p class="text-lg md:text-xl font-sans text-slate-100 max-w-3xl mx-auto leading-loose tracking-wider">
+                    Мы помогаем снять напряжение с тела, успокоить нервную систему и вернуть внутренний баланс через гималайские чаши, мудрость Аюрведы и точность астрологии Джйотиш. Комплексный подход, чтобы перевести вас из стресса в точку абсолютной ясности.
+                </p>
+                
+                <div class="mt-12 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#services" class="px-10 py-4 bg-teal-700 text-white rounded-full text-sm uppercase tracking-wider font-medium hover:bg-teal-600 transition w-full md:w-auto shadow-lg shadow-teal-900/50">
+                        Выбрать направление
+                    </a>
+                    <a href="#about" class="px-10 py-4 bg-black/40 text-white border border-slate-500 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-black/60 transition w-full md:w-auto">
+                        О мастерах
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- 2. О НАС (Блок «Мастера и Метод» - Часть 1) -->
+        <section id="about" class="py-24 bg-slate-950 text-slate-200">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-16 text-center">Наш путь и философия</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch max-w-7xl mx-auto">
+                    
+                  <!-- Фото -->
+    <div class="lg:col-span-5 relative group">
+        <div class="w-full h-full min-h-[400px] bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 flex items-center justify-center shadow-2xl relative">
+            
+            <!-- СЮДА ВСТАВЛЯЕТСЯ ФОТОГРАФИЯ (без затемняющего слоя) -->
+            <img src="media/our-photo1.webp" alt="Екатерина и Дмитрий Савины" class="absolute inset-0 w-full h-full object-cover object-center filter grayscale-[15%] hover:grayscale-0 transition-all duration-700 z-0">
+        </div>
+    </div>
+
+                    <!-- Текст -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-slate-900/40 p-8 md:p-14 rounded-3xl border border-slate-800/50 shadow-2xl h-full flex flex-col justify-center">
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed mb-8">
+                                Мы — семейная пара Екатерина и Дмитрий. С 2014 года вместе практикуем йогу не просто как упражнения на коврике, а как целостную науку о жизни. Наш путь прошел через успешную, но выматывающую бизнес-среду к полному переосмыслению своих целей, трансформации привычек и обретению внутренней свободы.
+                            </p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed mb-8">
+                                В нашей практике мы объединяем древние знания Йоги, Джйотиш, Аюрведы и звукотерапии. Исследуя мир и природу, мы поняли, что внешние путешествия неотделимы от внутренних. Звук стал для нас тем самым ключом, который работает на всех уровнях. Мы обучались в Индии и Непале, постоянно исследуем природу звука и обмениваемся опытом с мастерами из разных стран. Сейчас мы также путешествуем по миру вместе с нашим сыном, транслируя опыт нашей семьи дальше.
+                            </p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+                                Для нас звукотерапия — это не только услуга. Это продолжение нашего образа жизни. Мы создаем абсолютно безопасное, глубокое пространство, куда притягиваются люди, близкие нам по духу и энергетике.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- БЛОК СЕРТИФИКАТОВ (Благородное приглушение) -->
+                <div class="mt-20 pt-16 border-t border-slate-800/50">
+                    <div class="text-center md:text-left mb-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div>
+                            <h3 class="text-2xl font-serif font-medium text-white mb-2">Наши квалификации</h3>
+                            <p class="text-slate-300 font-sans text-sm">Международные сертификаты и дипломы</p>
+                        </div>
+                        <div class="hidden md:flex gap-2">
+                            <span class="w-2 h-2 rounded-full bg-teal-500/50"></span>
+                            <span class="w-2 h-2 rounded-full bg-teal-500/30"></span>
+                            <span class="w-2 h-2 rounded-full bg-teal-500/10"></span>
+                        </div>
+                    </div>
+
+                    <!-- Сетка из 4 сертификатов -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                        
+                        <!-- Сертификат 1 -->
+                        <div class="relative group cursor-zoom-in overflow-hidden rounded-2xl border border-slate-700/50 shadow-lg bg-slate-900 aspect-[3/4]" onclick="openModal('media/certificates/Sound_Kate1.webp')">
+                            <img src="media/certificates/Sound_Kate1.webp" alt="Сертификат звукотерапии Екатерины" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition duration-500 pointer-events-none"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
+                                <div class="bg-black/70 p-3 rounded-full text-white border border-white/20 backdrop-blur-sm">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Сертификат 2 -->
+                        <div class="relative group cursor-zoom-in overflow-hidden rounded-2xl border border-slate-700/50 shadow-lg bg-slate-900 aspect-[3/4]" onclick="openModal('media/certificates/Dima.webp')">
+                            <img src="media/certificates/Dima.webp" alt="Сертификат Дмитрия" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition duration-500 pointer-events-none"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
+                                <div class="bg-black/70 p-3 rounded-full text-white border border-white/20 backdrop-blur-sm">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Сертификат 3 -->
+                        <div class="relative group cursor-zoom-in overflow-hidden rounded-2xl border border-slate-700/50 shadow-lg bg-slate-900 aspect-[3/4]" onclick="openModal('media/certificates/Auyrveda.webp')">
+                            <img src="media/certificates/Auyrveda.webp" alt="Сертификат Аюрведа" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition duration-500 pointer-events-none"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
+                                <div class="bg-black/70 p-3 rounded-full text-white border border-white/20 backdrop-blur-sm">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Сертификат 4 -->
+                        <div class="relative group cursor-zoom-in overflow-hidden rounded-2xl border border-slate-700/50 shadow-lg bg-slate-900 aspect-[3/4]" onclick="openModal('media/certificates/BhaktiRussia1.webp')">
+                            <img src="media/certificates/BhaktiRussia1.webp" alt="Сертификат" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition duration-500 pointer-events-none"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
+                                <div class="bg-black/70 p-3 rounded-full text-white border border-white/20 backdrop-blur-sm">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- ИСПРАВЛЕНИЕ: Добавлен закрывающий тег для контейнера max-w-7xl -->
+        </section>
+
+        <!-- 3. О ПОДХОДЕ (Блок «Мастера и Метод» - Часть 2) -->
+<section id="approach" class="py-24 bg-slate-900 border-t border-slate-800 relative overflow-hidden">
+    
+    <!-- ЛЕВЫЙ ВИЗУАЛ: Астрономия и Джйотиш (Скрыт на мобильных) -->
+    <div class="absolute top-1/2 -translate-y-1/2 -left-32 xl:-left-10 w-[500px] h-[500px] pointer-events-none hidden lg:block z-0 opacity-25 mix-blend-screen text-teal-400">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <!-- Оси координат -->
+            <line x1="10" y1="50" x2="90" y2="50" stroke="currentColor" stroke-width="0.1" stroke-dasharray="1 1.5" />
+            <line x1="50" y1="10" x2="50" y2="90" stroke="currentColor" stroke-width="0.1" stroke-dasharray="1 1.5" />
+            <line x1="20" y1="20" x2="80" y2="80" stroke="currentColor" stroke-width="0.05" />
+            <line x1="20" y1="80" x2="80" y2="20" stroke="currentColor" stroke-width="0.05" />
+            <!-- Орбиты -->
+            <circle cx="50" cy="50" r="15" stroke="currentColor" stroke-width="0.1" />
+            <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="0.2" stroke-dasharray="2 3" class="text-teal-500" />
+            <circle cx="50" cy="50" r="35" stroke="currentColor" stroke-width="0.05" class="text-teal-300" />
+            <!-- Элемент ведической карты (Ромб) -->
+            <rect x="32.3" y="32.3" width="35.4" height="35.4" transform="rotate(45 50 50)" stroke="currentColor" stroke-width="0.1" class="text-teal-600" />
+            <!-- Планеты (Точки) -->
+            <circle cx="65" cy="50" r="1.5" fill="currentColor" class="text-teal-300" />
+            <circle cx="32.3" cy="32.3" r="1" fill="currentColor" class="text-teal-500" />
+            <circle cx="50" cy="85" r="0.8" fill="currentColor" class="text-teal-600" />
+        </svg>
+    </div>
+
+    <!-- ПРАВЫЙ ВИЗУАЛ: Акустические паттерны / Звуковые волны (Скрыт на мобильных) -->
+    <div class="absolute top-1/2 -translate-y-1/2 -right-32 xl:-right-10 w-[500px] h-[500px] pointer-events-none hidden lg:block z-0 opacity-25 mix-blend-screen text-teal-400">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <!-- Эпицентр вибрации у правого края -->
+            <circle cx="100" cy="50" r="10" stroke="currentColor" stroke-width="0.1" class="text-teal-300" />
+            <circle cx="100" cy="50" r="20" stroke="currentColor" stroke-width="0.2" />
+            <!-- Расходящиеся акустические волны -->
+            <circle cx="100" cy="50" r="30" stroke="currentColor" stroke-width="0.15" stroke-dasharray="3 1" class="text-teal-500" />
+            <circle cx="100" cy="50" r="45" stroke="currentColor" stroke-width="0.05" />
+            <circle cx="100" cy="50" r="60" stroke="currentColor" stroke-width="0.2" class="text-teal-600" stroke-dasharray="0.5 2" />
+            <circle cx="100" cy="50" r="75" stroke="currentColor" stroke-width="0.1" />
+            <circle cx="100" cy="50" r="95" stroke="currentColor" stroke-width="0.05" class="text-teal-300" />
+            <!-- Волновой резонанс (Синусоида на фоне) -->
+            <path d="M100,50 Q80,20 60,50 T20,50" stroke="currentColor" stroke-width="0.05" class="text-teal-500" />
+            <path d="M100,50 Q70,10 40,50 T-20,50" stroke="currentColor" stroke-width="0.05" class="text-teal-500" />
+        </svg>
+    </div>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ (Твой оригинальный код) -->
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-10">Исцеление как единый процесс</h2>
+        
+        <div class="space-y-8 text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+            <p>
+                Наш терапевтический подход является целостным. Мы рассматриваем человека во всей его полноте, не отделяя физическое тело от духа и эмоций. Чем больше между ними гармонии, тем выше качество жизни.
+            </p>
+            <p>
+                Наша задача — помочь вам найти правильный, уникальный баланс между всеми аспектами вашего бытия: физическим, энергетическим и ментальным.
+            </p>
+            <p>
+                Когда человек приходит в состоянии хронического стресса или выгорания, бессмысленно работать только с одной проблемой — важно увидеть картину целиком. Именно поэтому наши практики гармонично дополняют друг друга.
+            </p>
+            <p>
+                При этом мы за гибкость и бережное отношение к вашему времени и запросу.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14 text-left">
+            <!-- Точечное решение -->
+            <div class="bg-slate-950/80 p-8 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 text-xs uppercase tracking-wider rounded-full mb-4 font-sans">Формат 1</span>
+                    <h3 class="text-2xl font-serif font-medium text-white mb-4">Точечное решение</h3>
+                    <p class="text-sm md:text-base text-slate-300 font-sans font-light leading-relaxed">
+                        Вы можете обратиться за конкретной услугой под текущую задачу — например, получить консультацию по аюрведическому питанию и образу жизни, сделать астрологический разбор Джйотиш или пройти разовый сеанс виброакустического массажа для снятия острого напряжения.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Глубокий комплекс -->
+            <div class="bg-slate-950/80 p-8 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 text-xs uppercase tracking-wider rounded-full mb-4 font-sans">Формат 2</span>
+                    <h3 class="text-2xl font-serif font-medium text-white mb-4">Глубокий комплекс</h3>
+                    <p class="text-sm md:text-base text-slate-300 font-sans font-light leading-relaxed">
+                        Если вы чувствуете потребность в фундаментальной трансформации, мы объединяем инструменты в единую систему. В этом случае работа идет параллельно: вибрация устраняет зажимы тела, звук возвращает ресурс внутреннему состоянию, аюрведа выстраивает физиологию, а астрология помогает понять вектор дальнейшего движения.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Блок: Воздействие на трех уровнях (Табы) -->
+        <section id="method-levels" class="py-24 bg-slate-950 border-y border-slate-700/30">
+            <div class="max-w-6xl mx-auto px-6">
+                
+                <div class="text-center mb-16">
+                    <div class="inline-block px-4 py-1.5 bg-teal-900/30 border border-teal-700/50 text-teal-400 text-xs uppercase tracking-widest rounded-full mb-6">
+                        Холистический подход
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Воздействие на трех уровнях</h2>
+                    <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed max-w-3xl mx-auto">
+                    Для нас нет границы между телом и сознанием. Глубокая трансформация возможна, когда меняется само восприятие — через последовательное познание себя на всех уровнях. Наши практики работают в синергии: они задают верное направление пути и дают ясное понимание процессов, происходящих как глубоко внутри вас, так и в окружающем мире.
+                    </p>
+                </div>
+
+                <!-- Кнопки вкладок (Табы) -->
+                <div class="flex flex-col md:flex-row justify-center gap-4 mb-12">
+                    <button onclick="openTab(event, 'tab-physical')" class="tab-btn px-6 py-4 rounded-2xl border border-teal-700/50 bg-teal-900/20 text-white font-medium transition duration-300 w-full md:w-auto shadow-lg">
+                        1. Физическое тело (Аннамайя)
+                    </button>
+                    <button onclick="openTab(event, 'tab-energetic')" class="tab-btn px-6 py-4 rounded-2xl border border-slate-700/50 bg-slate-900 text-slate-400 hover:text-white transition duration-300 w-full md:w-auto">
+                        2. Энергия (Пранамайя)
+                    </button>
+                    <button onclick="openTab(event, 'tab-mental')" class="tab-btn px-6 py-4 rounded-2xl border border-slate-700/50 bg-slate-900 text-slate-400 hover:text-white transition duration-300 w-full md:w-auto">
+                        3. Психика и Эмоции (Маномайя)
+                    </button>
+                </div>
+
+                <!-- Контейнер с контентом вкладок -->
+                <div class="bg-slate-900 p-8 md:p-12 rounded-[2rem] border border-slate-700/50 shadow-2xl relative overflow-hidden min-h-[450px]">
+                    
+                    <!-- Декоративное свечение на фоне -->
+                    <div class="absolute -z-10 -bottom-20 -right-20 w-64 h-64 bg-teal-900/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Вкладка 1: Физика -->
+                    <div id="tab-physical" class="tab-content transition-opacity duration-500 block">
+                        <h3 class="text-3xl font-serif font-medium text-white mb-8">Механика и Нейробиология</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex gap-4 items-start">
+                                <div class="text-teal-400 mt-1">✦</div>
+                                <div>
+                                    <strong class="text-white block mb-1 text-lg">Вода как проводник и фасциальный релиз</strong>
+                                    <span class="text-slate-300 font-light leading-relaxed">С точки зрения физиологии, спазм — это нарушенный кровоток и затвердевшая фасция. Звук распространяется в воде тела в 4 раза быстрее. Эта ритмичная механическая вибрация нагревает соединительную ткань, возвращая ей текучесть и растворяя блок.</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="text-teal-400 mt-1">✦</div>
+                                <div>
+                                    <strong class="text-white block mb-1 text-lg">Перезагрузка нервной системы</strong>
+                                    <span class="text-slate-300 font-light leading-relaxed">Монотонный вибрационный сигнал поступает в рецепторы, и блуждающий нерв активирует парасимпатику. Мозг получает физиологический сигнал: «Угрозы нет, можно отпустить контроль».</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Интеграция -->
+                            <div class="p-6 mt-8 bg-slate-900/50 rounded-2xl border border-teal-900/30">
+                                <span class="block text-teal-500 text-sm uppercase tracking-widest font-semibold mb-2">Интеграция Аюрведы</span>
+                                <p class="text-slate-300 font-light leading-relaxed">
+                                    Чтобы мышцы не вернулись в состояние стресса, здесь подключается Аюрведа. Мы выстраиваем фундамент — питание и режим, которые балансируют вашу природу, закрепляя телесное расслабление на клеточном уровне.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка 2: Энергия -->
+                    <div id="tab-energetic" class="tab-content transition-opacity duration-500 hidden">
+                        <h3 class="text-3xl font-serif font-medium text-white mb-8">Движение жизненной силы</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex gap-4 items-start">
+                                <div class="text-teal-400 mt-1">✦</div>
+                                <div>
+                                    <strong class="text-white block mb-1 text-lg">Природа спазма и застои энергии</strong>
+                                    <span class="text-slate-300 font-light leading-relaxed">В ведической традиции там, где мышца твердеет физически, образуется «плотина» на тонком плане. Прана (жизненная сила) перестает свободно течь по каналам, становясь тяжелой.</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="text-teal-400 mt-1">✦</div>
+                                <div>
+                                    <strong class="text-white block mb-1 text-lg">Закон резонанса</strong>
+                                    <span class="text-slate-300 font-light leading-relaxed">Поющая чаша создает глубокую, ровную и гармоничную вибрацию. Застоявшаяся энергия сонастраивается с этой вибрацией, блок «растрясается», и прана вновь начинает свободно циркулировать. Вы ощущаете это как внезапное тепло или покалывание.</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Интеграция -->
+                            <div class="p-6 mt-8 bg-slate-900/50 rounded-2xl border border-teal-900/30">
+                                <span class="block text-teal-500 text-sm uppercase tracking-widest font-semibold mb-2">Сонастройка с ритмами</span>
+                                <p class="text-slate-300 font-light leading-relaxed">
+                                    Свободное течение праны поддерживается пониманием своих природных циклов. Здесь Аюрведа и Джйотиш помогают не растрачивать эту энергию впустую, синхронизируя вас с естественными биоритмами и астрологическими периодами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка 3: Психика -->
+                    <div id="tab-mental" class="tab-content transition-opacity duration-500 hidden">
+                        <h3 class="text-3xl font-serif font-medium text-white mb-8">Соматическая память и эмоции</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex gap-4 items-start">
+                                <div class="text-teal-400 mt-1">✦</div>
+                                <div>
+                                    <strong class="text-white block mb-1 text-lg">Мышечный панцирь и экологичный обход ума</strong>
+                                    <span class="text-slate-300 font-light leading-relaxed">Любая непрожитая эмоция «капсулируется» в теле. Обертоны чаш переводят мозг в альфа- и тета-волны, отключая внутреннего критика. Звук выполняет работу, позволяя телу исцелять психику без необходимости проговаривать травмы.</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="text-teal-400 mt-1">✦</div>
+                                <div>
+                                    <strong class="text-white block mb-1 text-lg">Глубокая распаковка</strong>
+                                    <span class="text-slate-300 font-light leading-relaxed">Когда вибрация расслабляет тело, а энергия течет, Маномайя коша высвобождает заряд. Вы можете почувствовать облегчение, будто с плеч упал тяжелый рюкзак.</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Интеграция -->
+                            <div class="p-6 mt-8 bg-slate-900/50 rounded-2xl border border-teal-900/30">
+                                <span class="block text-teal-500 text-sm uppercase tracking-widest font-semibold mb-2">Интеграция Джйотиш</span>
+                                <p class="text-slate-300 font-light leading-relaxed">
+                                    Когда сознание очищено звуком, ум готов к ответам. Астрология Джйотиш подсвечивает подсознательные программы и дает четкий вектор движения. Вы уходите не просто расслабленным, а с абсолютным пониманием своего пути.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Скрипт для переключения вкладок -->
+            <script>
+                function openTab(evt, tabName) {
+                    // Скрываем весь контент
+                    let tabcontent = document.getElementsByClassName("tab-content");
+                    for (let i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].classList.add("hidden");
+                        tabcontent[i].classList.remove("block");
+                    }
+                    
+                    // Сбрасываем стили всех кнопок
+                    let tablinks = document.getElementsByClassName("tab-btn");
+                    for (let i = 0; i < tablinks.length; i++) {
+                        tablinks[i].classList.remove("border-teal-700/50", "bg-teal-900/20", "text-white", "shadow-lg");
+                        tablinks[i].classList.add("border-slate-700/50", "bg-slate-900", "text-slate-400");
+                    }
+                    
+                    // Показываем нужную вкладку и делаем кнопку активной
+                    document.getElementById(tabName).classList.remove("hidden");
+                    document.getElementById(tabName).classList.add("block");
+                    
+                    evt.currentTarget.classList.add("border-teal-700/50", "bg-teal-900/20", "text-white", "shadow-lg");
+                    evt.currentTarget.classList.remove("border-slate-700/50", "bg-slate-900", "text-slate-400");
+                }
+            </script>
+        </section>
+
+        <!-- 5. ВИТРИНА ЭКОСИСТЕМЫ (Направления работы) -->
+        <section id="services" class="py-24 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="flex justify-center mb-12">
+                    <div class="inline-flex items-center gap-3 bg-teal-900/20 border border-teal-700/30 px-6 py-3 rounded-full shadow-[0_0_20px_rgba(13,148,136,0.1)]">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
+                        </span>
+                        <span class="text-teal-50 text-sm md:text-base font-medium tracking-wide">
+                            📍 Текущая локация: Покхара, Непал
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Обновленный заголовок и текст (без кнопок) -->
+<div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Пространство практик</h2>
+    <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto">
+        Выберите формат погружения, который откликается вам больше всего, и позвольте себе бережно вернуться в состояние гармонии.
+    </p>
+</div>
+                
+
+               <!-- СЕТКА УСЛУГ (КАТЕГОРИИ) -->
+                <div>
+                    
+                    <!-- ВЕРХНИЙ РЯД (3 карточки) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 mb-16">
+                        
+                        <!-- 1. ЗВУКОВАЯ ТЕРАПИЯ -->
+                        <a href="sound-healing.html" class="group block">
+                            <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                                <!-- Обновленный зеленый бейджик -->
+                                <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md border border-teal-700/50 text-teal-400 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 w-max whitespace-nowrap">
+                                    Онлайн / Офлайн
+                                </div>
+                                <img src="media/sound-healing.webp" alt="Звуковая терапия" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            
+                            <h3 class="text-2xl font-serif font-medium text-white mb-3 group-hover:text-teal-400 transition-colors">Звуковая терапия</h3>
+                            <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed mb-5">
+                                Комплексное воздействие живого звука и вибраций на тело и сознание. Мы используем гималайские поющие чаши, обертоновую перкуссию и другие инструменты для глубокого погружения и внутренней трансформации.
+                            </p>
+                            
+                            <div class="border-t border-slate-800/60 pt-4 mb-6">
+                                <span class="block text-slate-500 font-sans text-xs uppercase tracking-widest mb-2">Подходит для:</span>
+                                <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed">
+                                    Снятия телесных зажимов, остановки внутреннего диалога, работы с тревожностью и быстрого восстановления ресурса.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2 text-teal-500 font-sans text-xs font-medium uppercase tracking-widest group-hover:text-teal-400 transition-colors">
+                                Узнать подробнее
+                                <span class="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+                            </div>
+                        </a>
+                        
+                        <!-- 2. ДЖЙОТИШ -->
+                        <a href="jyotish.html" class="group block">
+                            <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                                <!-- Обновленный зеленый бейджик -->
+                                <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md border border-teal-700/50 text-teal-400 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 w-max whitespace-nowrap">
+                                    Офлайн
+                                </div>
+                                <img src="media/jyotish.webp" alt="Джйотиш" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            
+                            <h3 class="text-2xl font-serif font-medium text-white mb-3 group-hover:text-teal-400 transition-colors">Ведическая астрология Джйотиш</h3>
+                            <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed mb-5">
+                                Детальный разбор натальной карты. Древняя наука, освещающая ваш кармический путь, скрытые таланты, сильные стороны и наиболее благоприятные жизненные периоды.
+                            </p>
+
+                            <div class="border-t border-slate-800/60 pt-4 mb-6">
+                                <span class="block text-slate-500 font-sans text-xs uppercase tracking-widest mb-2">Подходит для:</span>
+                                <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed">
+                                    Поиска предназначения, непонимания текущего этапа, трудностей в принятии важных решений, кризиса самоопределения.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2 text-teal-500 font-sans text-xs font-medium uppercase tracking-widest group-hover:text-teal-400 transition-colors">
+                                Узнать подробнее
+                                <span class="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+                            </div>
+                        </a>
+
+                        <!-- 3. АЮРВЕДА -->
+                        <a href="ayurveda.html" class="group block">
+                            <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                                <!-- Обновленный зеленый бейджик -->
+                                <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md border border-teal-700/50 text-teal-400 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 w-max whitespace-nowrap">
+                                    Онлайн / Офлайн
+                                </div>
+                                <img src="media/ayurveda.webp" alt="Аюрведа" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                            
+                            <h3 class="text-2xl font-serif font-medium text-white mb-3 group-hover:text-teal-400 transition-colors">Аюрведическая консультация</h3>
+                            <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed mb-5">
+                                Определение вашей уникальной природной конституции (доши) и подбор индивидуальных рекомендаций по питанию, режиму дня и образу жизни для возвращения баланса.
+                            </p>
+
+                            <div class="border-t border-slate-800/60 pt-4 mb-6">
+                                <span class="block text-slate-500 font-sans text-xs uppercase tracking-widest mb-2">Подходит для:</span>
+                                <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed">
+                                    Проблем со сном, нарушения пищеварения, упадка сил, дисбаланса в теле и желания выстроить здоровый фундамент.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2 text-teal-500 font-sans text-xs font-medium uppercase tracking-widest group-hover:text-teal-400 transition-colors">
+                                Узнать подробнее
+                                <span class="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+                            </div>
+                        </a>
+
+                    </div>
+
+                   <!-- НИЖНИЙ РЯД (Теперь здесь 3 карточки на всю ширину) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 w-full">
+    
+    <!-- 4. КОРПОРАТИВНОЕ ОЗДОРОВЛЕНИЕ -->
+    <a href="#contacts" class="group block">
+        <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+            <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md border border-teal-700/50 text-teal-400 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 w-max whitespace-nowrap">
+                Онлайн / Офлайн
+            </div>
+            <img src="media/corporate.webp" alt="Корпоративное оздоровление" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        
+        <h3 class="text-2xl font-serif font-medium text-white mb-3 group-hover:text-teal-400 transition-colors">Корпоративное оздоровление</h3>
+        <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed mb-5">
+            Мы сотрудничаем с организациями, стремящимися поддерживать устойчивую производительность, целенаправленность и благополучие команд. Наши программы развивают ясность мышления и стрессоустойчивость.
+        </p>
+
+        <div class="border-t border-slate-800/60 pt-4 mb-6">
+            <span class="block text-slate-500 font-sans text-xs uppercase tracking-widest mb-2">Подходит для:</span>
+            <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed">
+                Тимбилдингов, профилактики выгорания, снижения уровня стресса в коллективе и повышения сплоченности.
+            </p>
+        </div>
+
+        <div class="flex items-center gap-2 text-teal-500 font-sans text-xs font-medium uppercase tracking-widest group-hover:text-teal-400 transition-colors">
+            Обсудить ваши события 
+            <span class="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+        </div>
+    </a>
+
+    <!-- 5. СПЕЦИАЛЬНЫЕ СОБЫТИЯ И РЕТРИТЫ -->
+    <a href="#contacts" class="group block">
+        <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+            <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md border border-teal-700/50 text-teal-400 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 w-max whitespace-nowrap">
+                Офлайн
+            </div>
+            <img src="media/events.webp" alt="Мероприятия" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        
+        <h3 class="text-2xl font-serif font-medium text-white mb-3 group-hover:text-teal-400 transition-colors">Авторские программы и события</h3>
+        <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed mb-5">
+            Создание уникального пространства под ваш запрос. Мы организуем сопровождение выходных, свадеб или банных выездов, интегрируя практики дыхания, медитации и глубокие звуковые ванны.
+        </p>
+
+        <div class="border-t border-slate-800/60 pt-4 mb-6">
+            <span class="block text-slate-500 font-sans text-xs uppercase tracking-widest mb-2">Подходит для:</span>
+            <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed">
+                Осознанных торжеств, нестандартного отдыха в кругу близких, частных мини-ретритов и индивидуальной проработки.
+            </p>
+        </div>
+
+        <div class="flex items-center gap-2 text-teal-500 font-sans text-xs font-medium uppercase tracking-widest group-hover:text-teal-400 transition-colors">
+            Обсудить ваше событие
+            <span class="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+        </div>
+    </a>
+
+    <!-- 6. ИНТЕГРАЛЬНОЕ СОПРОВОЖДЕНИЕ -->
+    <a href="integral.html" class="group block">
+        <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+            <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md border border-teal-700/50 text-teal-400 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 w-max whitespace-nowrap">
+                Онлайн
+            </div>
+            <!-- Замени integral-preview.webp на название твоего фото -->
+            <img src="media/integral-preview.webp" alt="Интегральное сопровождение" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        
+        <h3 class="text-2xl font-serif font-medium text-white mb-3 group-hover:text-teal-400 transition-colors">Интегральное сопровождение</h3>
+        <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed mb-5">
+            Долгосрочные индивидуальные программы (от 1 до 3 месяцев), объединяющие мудрость Аюрведы, астрологию Джйотиш, звукотерапию и мягкие телесные практики.
+        </p>
+
+        <div class="border-t border-slate-800/60 pt-4 mb-6">
+            <span class="block text-slate-500 font-sans text-xs uppercase tracking-widest mb-2">Подходит для:</span>
+            <p class="text-slate-300 font-sans text-sm md:text-base leading-relaxed">
+                Устойчивых изменений, закрепления новых здоровых привычек и обретения стабильной внутренней опоры. Комплексная перезагрузка для тела и ума, возвращающая энергию, спокойствие и гармонию на всех уровнях.
+            </p>
+        </div>
+
+        <div class="flex items-center gap-2 text-teal-500 font-sans text-xs font-medium uppercase tracking-widest group-hover:text-teal-400 transition-colors">
+            Узнать подробнее
+            <span class="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+        </div>
+    </a>
+</div>
+                </div>
+        </section>
+
+        
+        
+        <!-- 6. АРСЕНАЛ И ИНСТРУМЕНТЫ -->
+       <section id="instruments" class="py-24 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Наши инструменты для достижения глубокого расслабления</h2>
+                    <p class="text-xl md:text-2xl text-slate-300 font-serif leading-relaxed">
+                        Мы используем богатый арсенал аутентичных инструментов для создания многомерного звукового ландшафта.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Карточка 1 (Вытянутый блок сверху - фото слева, текст справа) -->
+                    <div class="md:col-span-2 bg-slate-900/60 rounded-3xl border border-slate-700/50 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col md:flex-row group">
+                        
+                        <!-- Блок с фото -->
+                        <div class="w-full md:w-1/2 h-72 md:h-auto overflow-hidden relative bg-slate-800">
+                            <!-- Закинь в папку файл chashi-kovanye.jpg -->
+                            <img src="media/instruments/Bowls.webp" alt="Кованые гималайские чаши" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        
+                        <!-- Блок с текстом -->
+                        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                            <h3 class="text-3xl font-serif font-medium text-white mb-4">Кованые гималайские чаши</h3>
+                            <p class="text-teal-400 text-base font-semibold uppercase tracking-wider mb-5">Сет из 10 инструментов</p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+                                Фундамент виброакустического массажа. Их мощная физическая вибрация проникает глубоко сквозь ткани, снимая мышечные и фасциальные спазмы, восстанавливая естественные ритмы тела.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 (Сякухати - фото сверху, текст снизу) -->
+                    <div class="bg-slate-900/60 rounded-3xl border border-slate-700/50 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col group">
+                        <!-- Блок с фото -->
+                        <div class="w-full h-64 overflow-hidden relative bg-slate-800">
+                            <!-- Закинь в папку файл shakuhachi.jpg -->
+                            <img src="media/instruments/Flute.webp" alt="Флейта Сякухати" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <!-- Блок с текстом -->
+                        <div class="p-8 md:p-10 flex-grow">
+                            <h3 class="text-3xl font-serif font-medium text-white mb-4">Флейта Сякухати</h3>
+                            <p class="text-teal-400 text-base font-semibold uppercase tracking-wider mb-5">Размер 40 см</p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+                                Традиционная бамбуковая флейта. Компактный размер позволяет создавать интимное, сфокусированное звучание. Её тембр гармонизирует дыхание и уводит в состояние глубокой медитации.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="bg-slate-900/60 rounded-3xl border border-slate-700/50 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col group">
+                        <div class="w-full h-64 overflow-hidden relative bg-slate-800">
+                            <!-- Закинь в папку файл chashi-litye.jpg -->
+                            <img src="media/instruments/Smal_bowls.webp" alt="Литые чаши" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="p-8 md:p-10 flex-grow">
+                            <h3 class="text-3xl font-serif font-medium text-white mb-4">Литые чаши</h3>
+                            <p class="text-teal-400 text-base font-semibold uppercase tracking-wider mb-5">Сет из 7 инструментов</p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+                                Используются для создания тонких, кристально чистых и мелодичных звуковых рисунков. Они не дают сильной вибрации, но виртуозно работают с сознанием, успокаивая ум.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="bg-slate-900/60 rounded-3xl border border-slate-700/50 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col group">
+                        <div class="w-full h-64 overflow-hidden relative bg-slate-800">
+                            <!-- Закинь в папку файл tubofon.jpg -->
+                            <img src="media/instruments/tubafon.webp" alt="Тубофон" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="p-8 md:p-10 flex-grow">
+                            <h3 class="text-3xl font-serif font-medium text-white mb-4">Тубофон</h3>
+                            <p class="text-teal-400 text-base font-semibold uppercase tracking-wider mb-5">Объемный резонанс</p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+                                Уникальный перкуссионный инструмент. Вибрация столба воздуха внутри труб создает упругий, басовитый гул, напоминающий звучание органа. Задает глубокий ритмический фундамент практике.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="bg-slate-900/60 rounded-3xl border border-slate-700/50 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col group">
+                        <div class="w-full h-64 overflow-hidden relative bg-slate-800">
+                            <!-- Закинь в папку файл perkussia.jpg -->
+                            <img src="media/instruments/Koshi.webp" alt="Обертоновая перкуссия" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="p-8 md:p-10 flex-grow">
+                            <h3 class="text-3xl font-serif font-medium text-white mb-4">Обертоновая перкуссия</h3>
+                            <p class="text-teal-400 text-base font-semibold uppercase tracking-wider mb-5">Караталы, Кенари, Коши</p>
+                            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed">
+                                Детально подобранные инструменты для работы с вниманием. Пронзительный звон каратал, органический шелест орешков кенари и переливы колокольчиков коши очищают пространство и возвращают ум в настоящий момент.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+<!-- Блок: Реальные отзывы (Слайдер с увеличением картинок) -->
+        <section id="reviews" class="py-24 bg-slate-900 border-y border-slate-700/30 text-slate-200 relative">
+            
+            <!-- Стили для скрытия системного скроллбара -->
+            <style>
+                .hide-scrollbar::-webkit-scrollbar { display: none; }
+                .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+            </style>
+
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <!-- Заголовок секции -->
+                <div class="text-center mb-16">
+                    <div class="inline-block px-4 py-1.5 bg-teal-900/30 border border-teal-700/50 text-teal-400 text-xs uppercase tracking-widest rounded-full mb-6 font-sans">
+                        Живой опыт
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Реальные истории состояний</h2>
+                    <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto">
+                        Мы не пишем красивые тексты. Здесь — настоящие эмоции, видео и аудиосообщения наших клиентов из разных стран после практик.
+                    </p>
+                </div>
+
+                <!-- Контейнер слайдера с кнопками -->
+                <div class="relative w-full">
+                    
+                    <!-- Кнопка Влево -->
+                    <button onclick="scrollSlider(-1)" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-slate-800 hover:bg-teal-700 text-white rounded-full items-center justify-center border border-slate-700 shadow-lg shadow-black/50 transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+
+                    <!-- Окно прокрутки слайдера -->
+                    <div id="reviewsSlider" class="flex overflow-x-auto gap-6 snap-x snap-mandatory hide-scrollbar pb-8 scroll-smooth items-stretch">
+                        
+                        <!-- 1. ТЕКСТ (Скриншот 1) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/1Nicolos2026SriLanka.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/1Nicolos2026SriLanka.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. ТЕКСТ (Скриншот 2) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/2vetnam2025.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/2vetnam2025.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- 3. ВИДЕО 1 -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg">
+                            <div class="h-64 bg-slate-800 relative overflow-hidden rounded-t-3xl">
+                                <video class="w-full h-full object-cover object-top" controls preload="metadata">
+                                    <source src="media/reviews/3PG2026Pokhara.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider mb-2 font-semibold">Гармонизация чакральной системы</p>
+                                <h3 class="text-lg font-serif font-medium text-white mb-2">«Непередаваемые словами ощущения»</h3>
+                                <p class="text-slate-300 font-sans text-sm leading-relaxed mt-auto">Фрагмент живого отклика сразу после практики.</p>
+                            </div>
+                        </div>
+
+                        <!-- 4. АУДИО 1 -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col justify-between shadow-lg p-6">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                    <span class="bg-teal-900/30 text-teal-400 text-[10px] px-2 py-1 rounded-md uppercase shrink-0">Аудио</span>
+                                </div>
+                                <h3 class="text-lg font-serif font-medium text-white mb-4">Глубокое эмоциональное освобождение</h3>
+                                <p class="text-slate-300 font-sans text-sm leading-relaxed mb-6 italic">«Я чувствовала, как нервная система возвращается в равновесие. Я смогла отпустить старые эмоции, прийти к принятию и прощению. Это было очень глубоко...»</p>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 mt-auto">
+                                <audio controls class="w-full h-10">
+                                    <source src="media/reviews/4viktoria2026nepal.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+
+                        <!-- 5. ТЕКСТ (Скриншот 3) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Индивидуальная звукотерапия. Акустическое путешествие.</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/5vietnam.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/5vietnam.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. ТЕКСТ (Скриншот 4) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/6Russia2025(2).webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/6Russia2025(2).webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. ВИДЕО 2 -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg">
+                            <div class="h-64 bg-black relative overflow-hidden rounded-t-3xl">
+                                <video class="w-full h-full object-contain" controls preload="metadata">
+                                    <source src="media/reviews/7India2024.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider mb-2 font-semibold">Акустическая медитация</p>
+                                <h3 class="text-lg font-serif font-medium text-white mb-2">«Состояние расслабления и гармонии»</h3>
+                                <p class="text-slate-300 font-sans text-sm leading-relaxed mt-auto">Фрагмент живого отклика сразу после практики.</p>
+                            </div>
+                        </div>
+
+                        <!-- 8. ТЕКСТ (Скриншот 5) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Сотрудничество с детским центром</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center text-green-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/8Vika2026Goa.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/8Vika2026Goa.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 9. ТЕКСТ (Скриншот 6) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброаккустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/9Russia2025(4).webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/9Russia2025(4).webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10. ТЕКСТ (Скриншот 7) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center text-green-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/10Russia2025.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/10Russia2025.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 11. АУДИО 2 -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col justify-between shadow-lg p-6">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                    <span class="bg-teal-900/30 text-teal-400 text-[10px] px-2 py-1 rounded-md uppercase shrink-0">Аудио</span>
+                                </div>
+                                <h3 class="text-lg font-serif font-medium text-white mb-4">Глубокие внутренние трансформации</h3>
+                                <p class="text-slate-300 font-sans text-sm leading-relaxed mb-6 italic">«Как будто с меня слетел большой слой ответственности. Мысли больше не напрягают, а находятся в фоновом режиме. Появилось комфортное состояние, когда хочется делать всё обдуманно и медленно, без привычной спешки. Очень глубокое и приятное послевкусие, которое длилось весь вечер»</p>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 mt-auto">
+                                <audio controls class="w-full h-10">
+                                    <source src="media/reviews/11russia2025.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        
+                        <!-- 12. АУДИО 3 -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col justify-between shadow-lg p-6">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                    <span class="bg-teal-900/30 text-teal-400 text-[10px] px-2 py-1 rounded-md uppercase shrink-0">Аудио</span>
+                                </div>
+                                <h3 class="text-lg font-serif font-medium text-white mb-4">Выход за пределы привычного восприятия</h3>
+                                <p class="text-slate-300 font-sans text-sm leading-relaxed mb-6 italic">«Очень мощный и неожиданный сеанс, я открыл для себя что-то новое. Это помогает отключиться от суеты и множества дел, переключиться на ощущение собственного тела и комфорта. От души благодарю за такой опыт и с нетерпением жду продолжения»</p>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 mt-auto">
+                                <audio controls class="w-full h-10">
+                                    <source src="media/reviews/12russia2025-2.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+
+                        <!-- 13. ТЕКСТ (Скриншот 8) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Гармонизация чакральной системы</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/13vietnam2025.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/13vietnam2025.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 14. ТЕКСТ (Скриншот 9) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center text-green-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/14Nepal2026.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/14Nepal2026.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 15. ТЕКСТ (Скриншот 10) -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/15Vietnam2025.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/15Vietnam2025.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 15. ВИДЕООТЗЫВ -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg">
+                            <div class="h-64 bg-slate-800 relative overflow-hidden rounded-t-3xl">
+                                <video class="w-full h-full object-cover object-top" controls preload="metadata">
+                                    <source src="media/reviews/16Nepal2026.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider mb-2 font-semibold">Контактный виброакустический массаж</p>
+                                <h3 class="text-lg font-serif font-medium text-white mb-2">«Я почувствовал слияние с этим миром...»</h3>
+                                <p class="text-slate-300 font-sans text-sm leading-relaxed mt-auto">Фрагмент живого отклика сразу после практики.</p>
+                            </div>
+                        </div>
+
+                        <!-- 16. ТЕКСТОВЫЙ СКРИНШОТ -->
+                        <div class="review-card snap-center shrink-0 w-[90vw] md:w-[400px] bg-slate-900 rounded-3xl border border-slate-800 hover:border-teal-700/50 transition duration-500 overflow-hidden flex flex-col shadow-lg group">
+                            <div class="p-6 pb-4 flex justify-between items-start mb-2">
+                                <p class="text-teal-400 text-xs uppercase tracking-wider font-semibold max-w-[70%] leading-relaxed">Контактный виброакустический массаж</p>
+                                <div class="flex items-center gap-2 shrink-0">
+                                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.08-.19-.09-.05-.21-.02-.3.01-.13.03-2.2.1-3.32 2.15-.16.3-.32.61-.48.9-.17.31-.35.63-.56.88-.23.27-.52.26-.81.25l-2.07-.46c-.22-.07-.36-.16-.38-.4 0-.15.06-.31.18-.49 1.13-1.63 4.29-3.07 9.42-4.33.6-.14 1.19-.24 1.76-.24.49 0 .8.17.9.43.05.14.05.3.01.55z"/></svg></div>
+                                </div>
+                            </div>
+                            <div class="px-6 pb-6 relative cursor-zoom-in group/img mt-auto w-full" onclick="openModal('media/reviews/17Russia2025.webp')">
+                                <div class="relative w-full h-80 rounded-2xl overflow-hidden border border-slate-700/50 shadow-inner bg-slate-800">
+                                    <img src="media/reviews/17Russia2025.webp" alt="Скриншот отзыва" class="w-full h-full object-cover object-top opacity-80 group-hover/img:opacity-100 transition duration-500 scale-100 group-hover/img:scale-105" />
+                                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition duration-300">
+                                        <div class="bg-black/80 px-5 py-2.5 rounded-full text-white backdrop-blur-md shadow-xl flex items-center gap-2 border border-white/10"><svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg><span class="text-sm font-medium tracking-wide">Развернуть</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кнопка Вправо -->
+                    <button onclick="scrollSlider(1)" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-slate-800 hover:bg-teal-700 text-white rounded-full items-center justify-center border border-slate-700 shadow-lg shadow-black/50 transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                    
+                </div>
+            </div>
+            </section>
+
+    <!-- 7. БЛОК ОТВЕТЫ НА СОМНЕНИЯ (FAQ) -->
+        <section id="faq" class="py-24 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-4xl mx-auto px-6">
+                
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Ответы на сомнения</h2>
+                    <p class="text-lg md:text-xl text-slate-400 font-sans font-light">Всё, что важно знать перед первой практикой</p>
+                </div>
+
+                <!-- КАТЕГОРИЯ: ЗВУКОТЕРАПИЯ -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-serif text-teal-500 mb-6 border-b border-slate-800 pb-3">Звукотерапия</h3>
+                    <div class="space-y-4">
+                        
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Это религиозная или эзотерическая практика?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Нет. Наш подход базируется на виброакустике и законах физики. Звуковые волны и физическая вибрация инструментов напрямую воздействуют на нервную систему, фасции и мышцы, помогая телу сбросить накопленный стресс. Это глубокая работа с вниманием и расслаблением, не требующая от вас никакой специальной веры или подготовки.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Нужно ли раздеваться и будет ли физический контакт?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Практика проходит в удобной, свободной одежде (рекомендуем мягкие ткани без молний). Мастер взаимодействует с вами с абсолютным уважением к личным границам. Кованые чаши ставятся непосредственно на тело поверх одежды. Если для вас некомфортно любое прикосновение, мы проведем сессию исключительно бесконтактным звуковым полем — это тоже очень эффективно.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Я стесняюсь проявлять эмоции при других людях. Какой формат выбрать?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Для максимального погружения и проживания эмоций мы настоятельно рекомендуем индивидуальную сессию (или парную — для вас и близкого человека). Мы создаем полностью безопасный «кокон», где можно уснуть, расплакаться или выдохнуть напряжение без посторонних взглядов. Групповые форматы отлично подходят для более легкого релакса и медитации.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Что делать, если я не умею медитировать и боюсь выглядеть глупо на фоне остальных?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>В звукотерапии нет понятия «правильной» или «неправильной» медитации. Вам не нужно принимать сложные позы лотоса или пытаться соответствовать чьим-то ожиданиям. Вы просто ложитесь на мягкий коврик, укрываетесь пледом и закрываете глаза. Ваше тело всё сделает само под воздействием вибрации. Мы не оцениваем ваш опыт — каждый проживает эту практику индивидуально, и любой ваш процесс будет абсолютно нормальным и правильным.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Могу ли я прервать практику, если мне вдруг станет некомфортно?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Да, безусловно. Вы полностью контролируете процесс. Наше пространство — это зона тотальной безопасности и свободы. Если в любой момент сессии вы почувствуете, что вам нужно открыть глаза, поменять позу, попить воды или даже тихо выйти из зала, вы можете сделать это абсолютно спокойно и без малейшей неловкости. Ваш комфорт для нас всегда на первом месте.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Поможет ли мне сеанс, если у меня слишком много мыслей и я не могу расслабиться?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Это самое частое сомнение, и именно с ним звук справляется лучше всего. Вам не нужно специально «заставлять» себя не думать — это создаст только лишнее напряжение. Физическая вибрация инструментов воздействует на тело напрямую, минуя логический контроль ума. Даже если в начале ваши мысли будут хаотичны, через некоторое время нервная система естественным образом переключится в режим глубокого расслабления.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Есть ли у звукотерапии медицинские противопоказания?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Виброакустический массаж — бережная практика, но у нее есть строгие ограничения. Мы не проводим контактные сессии (с постановкой чаш на тело) при наличии кардиостимулятора, на ранних сроках беременности, при эпилепсии, тяжелых психических расстройствах и острых воспалительных процессах. Перед началом работы мы обязательно обсуждаем ваше самочувствие, чтобы исключить любые риски и сделать практику на 100% безопасной для вас.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">В чем разница между живой сессией и видео со звуками чаш?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Аудио в наушниках передает только звуковой рисунок, который сильно сжимается электроникой. На живой сессии вы получаете объемный акустический резонанс и мощную физическую вибрацию, которая буквально проходит сквозь ткани вашего тела, расслабляя спазмы. Такое тактильное погружение невозможно сымитировать через динамики телефона.</p>
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+
+                <!-- КАТЕГОРИЯ: ДЖЙОТИШ -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-serif text-teal-500 mb-6 border-b border-slate-800 pb-3">Ведическая астрология (Джйотиш)</h3>
+                    <div class="space-y-4">
+                        
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Джйотиш — это гадание и предсказание будущего?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Нет, мы не занимаемся фатализмом и гаданиями. Ведическая астрология Джйотиш в нашей практике — это точный аналитический инструмент, своеобразная «карта» вашей психики и кармических задач. Она помогает понять ваши сильные стороны, причины текущего напряжения и подобрать методы, которые вернут вас в ресурсное состояние, опираясь на вашу природу, а не на абстрактные прогнозы. Но итоговый Путь творится самостоятельно — силой намерения и волей повседневного выбора.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Не будут ли результаты разбора слишком общими, «подходящими под любого человека»?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Джйотиш — это не абстрактные гадания или популярные знаки зодиака из журналов. Это древнейшая ведическая научная система — Веданга («Глаза Вед»), опирающаяся на точные астрономические и математические расчеты звездного неба в момент вашего рождения.<br><br>В отличие от упрощенных подходов, ведическая астрология работает с вашей уникальной натальной картой. Мы анализируем не только положение планет (Грах), но и индивидуальный восходящий знак (Лагну), Лунную накшатру, а также комбинации планет и тонкие дробные карты. Каждая душа воплощается в строго определенное время, когда картина звездного неба точно отражает её накопленную карму. Вы получите не «универсальные формулы», а глубинную расшифровку вашего личного психологического профиля, скрытых талантов, алгоритмов принятия решений и кармических задач.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Зачем идти к мастеру, если в интернете много бесплатных астрологических калькуляторов?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Любой онлайн-калькулятор выдает лишь сухой, изолированный программный алгоритм. Он показывает фрагменты — отдельные положения планет, которые без понимания контекста часто противоречат друг другу. Программа не обладает разумом и не способна узреть объёмную картину вашей судьбы.<br><br>Главная задача мастера — это синтез. Джйотиш несёт глубочайший философский смысл. Мастер связывает сотни факторов (периоды Вимшоттари-даша, транзиты, силу домов, систему Аштака-варга) в единую логичную систему, переводит мудрость священных шастр на понятный современный язык и адаптирует её под вашу реальную жизнь. На консультации вы платите не за автоматический расчет карты, а за живую передачу знаний, многолетний практический опыт и глубокую, прикладную расшифровку вашего пути.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Если в натальной карте всё «записано», значит ли это, что моя судьба предопределена и я ничего не могу изменить?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Нет, фатализм противоречит сути Вед. Гороскоп — это карта души, но не сам маршрут. В натальной карте показан ваш потенциал, накопленная карма (дхарма) и главные жизненные уроки. Однако итоговый Путь вы творите сами — силой своего намерения и ежедневным осознанным выбором.<br><br>Планеты не «наказывают» и не заставляют нас поступать определенным образом. Они работают как зеркало, отражая в материальном мире нашу собственную судьбу. Как говорится в ведических писаниях, цель Джйотиш — не изменить сами внешние обстоятельства, а изменить нашу реакцию на них. Выбирать — страдать от испытаний или духовно расти через них — это наш личный выбор. Обретая власть над умом и понимая уроки планет, человек перестает слепо подчиняться «судьбе» и обретает истинную свободу.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">А что, если астролог увидит в моей карте что-то страшное? Насколько это опасно знать?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Джйотиш в древней традиции создан не для того, чтобы пугать, а чтобы давать защиту, зрение и осознанность. В ведическом подходе не существует «приговоров». Все напряженные комбинации (например, сложные период Сатурна или аспекты Марса) показывают лишь сферы, где душе требуется проявить больше внимания, терпения и работы над собой.<br><br>Если в карте есть указания на период ослабления или потенциальные вызовы, Джйотиш дает конкретные инструменты нейтрализации и коррекции (Упайи). Мы не используем «страшилки». Вы получите практические ведические методы гармонизации: работа с дыханием (Свара-шастра), мантра-терапия, гармонизация через элементы Аюрведы и звукотерапию, благотворительность и правильный духовный настрой. Знание дает не страх, а опору и способность выйти из-под негативного влияния планет.</p>
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+
+                <!-- КАТЕГОРИЯ: АЮРВЕДА -->
+                <div>
+                    <h3 class="text-2xl font-serif text-teal-500 mb-6 border-b border-slate-800 pb-3">Аюрведа</h3>
+                    <div class="space-y-4">
+                        
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Обязательно ли мне разбираться в дошах и Аюрведе, чтобы прийти на консультацию?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Абсолютно нет. Наша задача — перевести сложные древние термины на понятный современный язык. Вам не нужно знать, что такое Питта, Вата или Капха, и читать специализированную литературу. Мы сами проведем диагностику, определим вашу природную конституцию и текущий дисбаланс. Вы получите не лекцию по санскриту, а готовый, простой «инструктаж» по вашему телу с применимыми в реальной жизни рекомендациями.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">А точно ли мне поможет Аюрведа?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Аюрведа — это не «волшебная таблетка», мгновенно стирающая симптомы, а глубокая, проверенная тысячелетиями система восстановления здоровья. Она работает безотказно, потому что устраняет саму причину дисбаланса в организме, а не маскирует его следствия. Эффект от аюрведического подхода всегда ощутимый и долгосрочный, но он напрямую зависит от вашей готовности внедрять наши рекомендации в свою жизнь: мягко корректировать питание, режим дня и привычки в соответствии с вашей природной конституцией.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none">
+                                <h4 class="text-lg md:text-xl font-serif font-medium text-slate-100 group-hover:text-teal-400 transition-colors pr-4">Что, если после сеанса мне станет хуже (появится головная боль, тревога или сильная усталость)?</h4>
+                                <span class="transition duration-300 group-open:-rotate-180 text-teal-500 flex-shrink-0"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+                            </summary>
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-slate-300 font-sans leading-relaxed text-sm md:text-base border-t border-slate-800/50 pt-4 mt-2">
+                                <p>Такое состояние возникает нечасто, но оно абсолютно нормально. Специалисты называют это «целительным кризом» или стадией глубокой адаптации.<br><br>В <b>звукотерапии</b> вибрация чаш поднимает на поверхность застарелые мышечные и эмоциональные блоки. Если подавленного напряжения было слишком много, его выход может сопровождаться временной слабостью, легкой головной болью или внезапными слезами. Это не значит, что вам навредили — это значит, что ваша нервная система начала масштабную «уборку» и сброс стресса.<br><br>В <b>Аюрведе</b> подход выстроен так, чтобы действовать максимально мягко и безопасно. Ведический подход в современном мире обязательно интегрируется с здравым смыслом. Мы учитываем имеющиеся у вас медицинские диагнозы, физиологические ограничения, текущие анализы, стадию заболеваний и приём назначенных врачом лекарств. Но когда мы запускаем процессы очищения и корректируем привычки, организм начинает активно избавляться от накопившихся токсинов, что в первые дни может давать легкое чувство утомления.<br><br>Главное правило: не пугайтесь этого состояния. Пейте больше теплой воды, дайте себе время на отдых, и вскоре на смену этому временному дискомфорту придет состояние кристальной ясности и глубокой легкости.</p>
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        </main>
+
+        <!-- 8. ПОДВАЛ (КОНТАКТЫ, ПОЧТА И ДИСКЛЕЙМЕРЫ) -->
+    <footer id="contacts" class="bg-black pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+        
+        <!-- Декоративное свечение на фоне -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-teal-900/50 to-transparent"></div>
+
+        <div class="max-w-[1400px] mx-auto px-6 xl:px-10">
+            
+            <!-- БЛОК-ПРИЗЫВ ПЕРЕД КОНТАКТАМИ -->
+            <div class="bg-gradient-to-r from-slate-900/80 via-teal-950/30 to-slate-900/80 border border-teal-900/30 rounded-3xl p-8 md:p-12 mb-20 text-center max-w-4xl mx-auto backdrop-blur-md">
+                <h3 class="font-serif text-3xl md:text-4xl text-white mb-4">Начните путь к внутренней гармонии</h3>
+                <p class="text-slate-300 font-sans text-sm md:text-base mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Остались вопросы по практикам, подбору времени или формату консультаций? Напишите нам напрямую — мы на связи и с радостью ответим.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="https://t.me/KatrinSoundBliss" target="_blank" rel="noopener noreferrer" class="bg-teal-700 hover:bg-teal-600 text-white text-xs font-sans font-medium tracking-widest uppercase px-8 py-3.5 rounded-full transition-all shadow-lg shadow-teal-900/30">
+                        Написать в Telegram
+                    </a>
+                    <a href="https://wa.me/message/RZ2QRTAU4RWZH1" target="_blank" rel="noopener noreferrer" class="bg-teal-700 hover:bg-teal-600 text-white text-xs font-sans font-medium tracking-widest uppercase px-8 py-3.5 rounded-full transition-all shadow-lg shadow-teal-900/30">
+                        Написать в WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Сетка на 3 колонки -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 xl:gap-16 mb-20">
+                
+                <!-- Колонка 1: Бренд и Локация -->
+                <div class="flex flex-col">
+                    <a href="#" class="inline-flex items-center gap-5 mb-8 group">
+                        <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
+                        <div class="flex flex-col justify-center">
+                            <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Екатерина & Дмитрий</span>
+                            <span class="font-sans text-slate-400 text-xs tracking-[0.2em] uppercase">Савины</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+                        Комплексный подход к восстановлению внутреннего баланса через гималайские чаши, мудрость Аюрведы и астрологию Джйотиш.
+                    </p>
+                    <div class="flex items-center gap-3 text-teal-500 text-sm font-sans bg-teal-900/10 border border-teal-900/30 p-4 rounded-2xl w-max">
+                        <span class="relative flex h-2.5 w-2.5 shrink-0">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
+                        </span>
+                        <span>Текущая локация: Покхара, Непал<br><span class="text-xs text-teal-600">(и онлайн по всему миру)</span></span>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Прямая связь (Мессенджеры и Почта) -->
+                <div class="flex flex-col">
+                    <h4 class="text-white font-serif text-2xl mb-4">Контакты</h4>
+                    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+                        Для записи и вопросов используйте мессенджеры или отправьте нам письмо:
+                    </p>
+                    
+                    <ul class="space-y-4 mb-6">
+                        <li>
+                            <a href="https://wa.me/message/RZ2QRTAU4RWZH1" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                                <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-teal-500 flex items-center justify-center text-teal-500 transition-all">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.086 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                </span>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/KatrinSoundBliss" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                                <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-teal-500 flex items-center justify-center text-teal-500 transition-all">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.5 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                                </span>
+                                Telegram
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Почта сразу после мессенджеров -->
+                    <div>
+                        <a href="mailto:savinsoundspace@gmail.com" class="inline-flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                            <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-teal-500 shrink-0">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </span>
+                            savinsoundspace@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Социальные сети -->
+                <div class="flex flex-col">
+                    <h4 class="text-white font-serif text-2xl mb-4">Наша жизнь</h4>
+                    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+                        Делимся философией, кадрами из путешествий и закулисьем практик:
+                    </p>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://www.instagram.com/kate.savina?igsh=MXE4cDNvNGt3Z2lvbg%3D%3D&igsi=MXE4cDNvNGt3Z2lvbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                                <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-pink-500/50 flex items-center justify-center text-slate-400 group-hover:text-pink-400 transition-all">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </span>
+                                Instagram @kate.savina
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/1DmYaT3Yjy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                                <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-blue-500/50 flex items-center justify-center text-slate-400 group-hover:text-blue-400 transition-all">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </span>
+                                Facebook (Екатерина)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/19UBCH1Q5Z/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                                <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-blue-500/50 flex items-center justify-center text-slate-400 group-hover:text-blue-400 transition-all">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </span>
+                                Facebook (Дмитрий)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Разделительная линия -->
+            <div class="w-full h-px bg-slate-900/80 mb-10"></div>
+
+            <!-- Дисклеймеры и Юридическая информация -->
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-10">
+                <div class="max-w-4xl">
+                    <p class="text-slate-600 text-[11px] font-sans leading-relaxed mb-3 uppercase tracking-widest font-semibold">Внимание</p>
+                    <p class="text-slate-500 text-xs font-sans leading-relaxed text-justify mb-4">
+                        Услуги, представленные на сайте (саундхилинг, звуковой массаж, аюрведические консультации и консультации по системе Джйотиш), не являются медицинскими услугами, не заменяют профессиональную медицинскую помощь, диагностику или лечение. Все практики направлены на общую релаксацию, снижение стресса и гармонизацию внутреннего состояния. При наличии тяжелых заболеваний, психических расстройств, эпилепсии, установленном кардиостимуляторе или на ранних сроках беременности обязательно проконсультируйтесь с вашим лечащим врачом перед посещением сеанса. 
+                    </p>
+                    <p class="text-slate-500 text-xs font-sans leading-relaxed text-justify">
+                        Информация на сайте носит ознакомительный характер и не является публичной офертой. Точная стоимость и возможность проведения услуг рассчитываются индивидуально.
+                    </p>
+                </div>
+                <div class="flex flex-col items-start lg:items-end gap-2 shrink-0 pt-2">
+                    <p class="text-slate-600 text-xs font-sans text-left lg:text-right uppercase tracking-widest">© 2026 Екатерина и Дмитрий Савины.<br>Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ПОЛНОЭКРАННОЕ МОДАЛЬНОЕ ОКНО ДЛЯ КАРТИНОК -->
+            <div id="imageModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4 backdrop-blur-md transition-opacity duration-300 opacity-0" onclick="closeModal()">
+                <button class="absolute top-6 right-6 text-white/70 hover:text-white transition w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-sm z-10">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+                <img id="modalImage" src="" alt="Отзыв крупно" class="max-h-[90vh] max-w-full rounded-xl object-contain shadow-2xl scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+            </div>
+
+            <!-- Скрипты управления -->
+            <script>
+                function scrollSlider(direction) {
+                    const slider = document.getElementById('reviewsSlider');
+                    const cardWidth = slider.querySelector('.review-card').offsetWidth + 24; 
+                    slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+                    const medias = slider.querySelectorAll('video, audio');
+                    medias.forEach(media => media.pause());
+                }
+
+                function openModal(imageSrc) {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    modalImg.src = imageSrc;
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    
+                    // ИСПРАВЛЕНИЕ: Блокируем скролл заднего фона
+                    document.body.style.overflow = 'hidden';
+                    
+                    setTimeout(() => {
+                        modal.classList.remove('opacity-0');
+                        modalImg.classList.remove('scale-95');
+                        modalImg.classList.add('scale-100');
+                    }, 10);
+                }
+
+                function closeModal() {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    modal.classList.add('opacity-0');
+                    modalImg.classList.remove('scale-100');
+                    modalImg.classList.add('scale-95');
+                    
+                    // ИСПРАВЛЕНИЕ: Возвращаем скролл заднего фона
+                    document.body.style.overflow = '';
+                    
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('flex');
+                        modalImg.src = '';
+                    }, 300);
+                }
+            </script>
+
+    <!-- СКРИПТ ДЛЯ МОБИЛЬНОГО МЕНЮ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerBtn = document.getElementById('burger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            // Открываем и закрываем меню по клику на бургер
+            burgerBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+
+            // Автоматически закрываем меню при клике на ссылку
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth scroll-pt-20">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYXGBLK178"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FYXGBLK178');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джйотиш | Екатерина & Дмитрий Савины</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Open Graph (RU) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://savinsoundspace.com/">
+    <meta property="og:title" content="Savin Sound Space | Звукотерапия и Аюрведа">
+    <meta property="og:description" content="Комплексный подход к восстановлению внутреннего баланса: гималайские поющие чаши, аюрведа, джйотиш и йога.">
+    <meta property="og:image" content="https://savinsoundspace.com/media/og-jyotish.jpg">
+
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden scroll-smooth">
+
+    <!-- ЕДИНАЯ ВЕРХНЯЯ ПАНЕЛЬ ДЛЯ СТРАНИЦ УСЛУГ -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-sm border-b border-white/5">
+        <div class="w-full mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Логотип и Заголовок (ведет на главную) -->
+            <a href="index.html" class="flex items-center gap-2 sm:gap-4 group h-full relative z-10 min-w-0 mr-4">
+                <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-12 sm:h-full w-auto object-contain transition-transform duration-300 group-hover:scale-125 origin-left shrink-0">
+                
+                <div class="flex flex-col justify-center min-w-0">
+                    <span class="font-serif text-white text-[12px] sm:text-[15px] lg:text-[20px] tracking-[0.1em] uppercase leading-none truncate">Екатерина & Дмитрий Савины</span>
+                    <span class="font-sans text-white text-[7px] sm:text-[9px] lg:text-[10px] tracking-[0.2em] uppercase mt-1 lg:mt-1.5 truncate">Сертифицированные мастера</span>
+                </div>
+            </a>
+
+            <!-- ДЕСКТОПНОЕ МЕНЮ ДЛЯ ВНУТРЕННИХ СТРАНИЦ -->
+            <div class="hidden xl:flex items-center gap-4 2xl:gap-6 ml-auto shrink-0">
+                <a href="index.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Главная<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="index.html#about" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">О нас<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="#services" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Услуги<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="index.html#instruments" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Инструменты<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="index.html#reviews" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Отзывы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="index.html#faq" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Ответы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+                <a href="gallery.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Галерея<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+
+                <!-- Кнопка Записаться -->
+                <a href="#contacts" class="bg-teal-700 hover:bg-teal-600 text-white text-[10px] 2xl:text-xs font-sans font-medium tracking-widest uppercase px-5 py-2.5 rounded-full transition-all ml-2 whitespace-nowrap">
+                    Записаться
+                </a>
+
+                <!-- Кнопка EN -->
+                <a href="jyotish-en.html" class="text-white bg-slate-800/50 hover:bg-teal-700 border border-slate-500 hover:border-teal-600 text-[10px] 2xl:text-xs font-sans font-medium tracking-widest transition-all rounded-full px-4 py-2.5 ml-1 flex items-center justify-center">
+                    EN
+                </a>
+            </div>
+
+            <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
+            <button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+
+        </div>
+        
+        <!-- МОБИЛЬНОЕ МЕНЮ ДЛЯ ВНУТРЕННИХ СТРАНИЦ -->
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-slate-950/95 backdrop-blur-md border-b border-white/5 flex-col items-center py-8 gap-6 shadow-2xl xl:hidden">
+            <a href="index.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Главная</a>
+            <a href="index.html#about" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">О нас</a>
+            <a href="#services" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Услуги</a>
+            <a href="index.html#instruments" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Инструменты</a>
+            <a href="index.html#reviews" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Отзывы</a>
+            <a href="index.html#faq" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Ответы</a>
+            <a href="gallery.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Галерея</a>
+            
+            <div class="w-12 h-px bg-slate-800 my-2"></div>
+            
+            <a href="#contacts" class="mobile-link bg-teal-700 hover:bg-teal-600 text-white text-xs font-sans font-medium tracking-widest uppercase px-8 py-3 rounded-full transition-colors">
+                Записаться
+            </a>
+            <a href="jyotish-en.html" class="text-slate-400 hover:text-white text-xs font-sans tracking-widest uppercase mt-2 transition-colors">
+                EN (English)
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- ПЕРВЫЙ ЭКРАН (КОСМОС) -->
+    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        
+        <div class="absolute inset-0 z-0">
+            <img src="media/cosmos-bg.webp" alt="Звездное небо Джйотиш" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-slate-950/40"></div>
+        </div>
+
+        <div class="relative z-10 px-6 max-w-6xl mx-auto flex flex-col items-center text-center mt-20">
+            
+            <div class="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+                <span class="text-teal-400 text-xs">📍</span>
+                <span class="text-slate-300 text-[10px] uppercase tracking-widest">Очные разборы в Покхаре</span>
+            </div>
+
+           <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-8 font-bold [text-shadow:_0_4px_12px_rgb(0_0_0_/_100%),_0_1px_3px_rgb(0_0_0_/_100%)]">
+                Ведическая астрология <br>
+                <span class="text-teal-400 italic font-medium">Джйотиш</span>
+            </h1>
+
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-lg md:text-xl text-white font-sans leading-relaxed font-medium [text-shadow:_0_3px_8px_rgb(0_0_0_/_100%),_0_1px_2px_rgb(0_0_0_/_100%)]">
+                    Глубокий письменный анализ вашей натальной карты от Екатерины. Поможет увидеть свои сильные стороны характера, обрести внутренние точки опоры и осознать свои истинные задачи.
+                </p>
+            </div>
+
+            <a href="#how-it-works" class="inline-block px-10 py-4 bg-teal-700 hover:bg-teal-600 text-white rounded-full text-sm uppercase tracking-wider font-medium transition shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                Как проходит разбор
+            </a>
+        </div>
+    </header>
+
+    <!-- СЕКЦИЯ 1: ФИЛОСОФИЯ И МЕХАНИКА (ТЕМНАЯ 950) -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-slate-950 relative overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-[800px] h-[800px] bg-teal-900/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <!-- Широкий контейнер 7xl -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="max-w-4xl mx-auto text-center mb-24 md:mb-32">
+                <span class="text-teal-500 text-xs uppercase tracking-widest font-semibold mb-4 block">Механика влияния</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-8 leading-tight">Планеты как зеркало судьбы</h2>
+                <div class="space-y-6 text-slate-300 font-sans text-base md:text-lg leading-relaxed text-left md:text-center">
+                    <p>
+                        За каждым символом и положением планет в вашей карте стоит глубокий философский смысл. Важно понимать: <strong class="text-white font-medium">планеты не управляют нами и не влияют на нас напрямую.</strong> Они работают как зеркало, отражая наш путь в судьбе.
+                    </p>
+                    <p>
+                        Планеты служат сигнификаторами и показателями: глядя на них, мы можем считывать, когда нужно остановиться, а когда — двигаться вперед. Например, определенные комбинации на звездном небе демонстрируют, что в данный период жизни лучше воздержаться от важных покупок или судьбоносных решений, переждав это время.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Сетка растянута к краям -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start mb-24 md:mb-32">
+                
+                <div class="lg:col-span-5 space-y-16">
+                    <div class="relative pl-6 md:pl-8">
+                        <div class="absolute left-0 top-2 bottom-2 w-[1px] bg-gradient-to-b from-teal-500/50 to-transparent"></div>
+                        <span class="text-teal-500 text-xs uppercase tracking-widest font-semibold mb-3 block">Осознанный выбор</span>
+                        <h3 class="text-3xl font-serif text-white mb-4">Кармические задачи</h3>
+                        <p class="text-slate-300 font-sans text-base leading-relaxed">
+                            Задача каждой души, воплощенной в материальном мире, — научиться правильным реакциям на происходящее. Мы не всегда можем изменить сами события нашей жизни, но изменить свою реакцию на них — это наш осознанный выбор. Именно правильная реакция не провоцирует дальнейшие страдания и помогает развязывать кармические узлы.
+                        </p>
+                    </div>
+
+                    <div class="relative pl-6 md:pl-8">
+                        <div class="absolute left-0 top-2 bottom-2 w-[1px] bg-gradient-to-b from-teal-500/50 to-transparent"></div>
+                        <span class="text-teal-500 text-xs uppercase tracking-widest font-semibold mb-3 block">Истинный путь</span>
+                        <h3 class="text-3xl font-serif text-white mb-4">Законы Дхармы</h3>
+                        <p class="text-slate-300 font-sans text-base leading-relaxed">
+                            Понимая свое истинное предназначение, мы преуспеваем во всех сферах жизни. Как сказано в «Бхагавад-гите», человек будет счастлив только тогда, когда следует своей Дхарме. Нельзя проживать чужую жизнь, заниматься не своим делом и оставаться в процветании. Люди годами лечат симптомы, ходят по кругу в отношениях исключительно потому, что не знают своей изначальной природы.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-slate-900/40 backdrop-blur-sm border border-slate-800/80 p-8 md:p-14 rounded-[2rem]">
+                    <h3 class="text-3xl md:text-4xl font-serif text-white mb-10 text-center md:text-left">Космический снимок судьбы</h3>
+                    
+                    <div class="space-y-12">
+                        <div class="flex flex-col sm:flex-row gap-6 items-start group">
+                            <span class="text-teal-900 font-serif text-6xl leading-none group-hover:text-teal-500 transition-colors duration-500">01</span>
+                            <div>
+                                <h4 class="text-white font-medium mb-3 uppercase tracking-wider text-sm">Небесная фиксация</h4>
+                                <p class="text-slate-300 text-base font-sans leading-relaxed">
+                                    Даже если в момент вашего рождения на звездном небе была напряженная комбинация планет, она навсегда запечатлевается и становится вашей натальной картой. Через месяц звезды сменят свое положение, но ваш личный «звездный паспорт» останется с вами на всю жизнь.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-6 items-start group">
+                            <span class="text-teal-900 font-serif text-6xl leading-none group-hover:text-teal-500 transition-colors duration-500">02</span>
+                            <div>
+                                <h4 class="text-white font-medium mb-3 uppercase tracking-wider text-sm">Уроки ретроградности</h4>
+                                <p class="text-slate-300 text-base font-sans leading-relaxed">
+                                    Если у вас есть нерешенные кармические задачи (например, сложные отношения или материальные привязанности) — вы родитесь в момент, когда профильная планета движется ретроградно (вспять). Это главный маркер тех сфер жизни, где вас ждут ключевые уроки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center relative">
+                <div class="w-16 h-[1px] bg-teal-500/50 mx-auto mb-10"></div>
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Истинная свобода</h2>
+                <p class="text-2xl md:text-3xl text-teal-100/90 font-serif leading-relaxed mb-6 italic">
+                    Джйотиш не выносит фатальных приговоров, а дает реальные инструменты управления судьбой.
+                </p>
+                <p class="text-slate-300 font-sans text-base md:text-lg leading-relaxed text-left md:text-center">
+                    Гороскоп — это карта души, но не жесткий маршрут. В ней заложены потенциал, уроки и вектор, но итоговый Путь творится самостоятельно — силой намерения и осознанным выбором каждого дня. Когда мы обретаем власть над умом и направляем сердце к свету, мы поднимаемся над вероятностями, заданными светилами. <strong class="text-white font-medium">Познав свою «необходимость», человек обретает истинную свободу.</strong>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 2: МЯГКИЕ ЗАПРОСЫ (СВЕТЛАЯ 900) -->
+    <section class="py-20 md:py-28 bg-slate-900 border-t border-slate-800 relative overflow-hidden">
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <!-- Широкий контейнер 7xl -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">С чем помогает Джйотиш</h2>
+            </div>
+
+            <!-- Сетка растянута широким разрывом (gap-x-24) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 lg:gap-x-24 gap-y-14">
+                <div class="border-l-2 border-teal-800/40 pl-6 py-1">
+                    <h4 class="text-white font-serif text-3xl mb-4">Поиск своего пути</h4>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Непонимание истинных талантов, ощущение «я живу не своей жизнью» и поиск Дхармы (своего дела и предназначения).</p>
+                </div>
+                <div class="border-l-2 border-teal-800/40 pl-6 py-1">
+                    <h4 class="text-white font-serif text-3xl mb-4">Кризисы и тупики</h4>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Периоды, когда все валится из рук. Анализ покажет, когда закончится этот этап, для чего он дан и какие уроки нужно извлечь.</p>
+                </div>
+                <div class="border-l-2 border-teal-800/40 pl-6 py-1">
+                    <h4 class="text-white font-serif text-3xl mb-4">Сфера отношений</h4>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Поиск причин, почему повторяются одни и те же болезненные сценарии с партнерами, и мягкий выход из этого замкнутого круга.</p>
+                </div>
+                <div class="border-l-2 border-teal-800/40 pl-6 py-1">
+                    <h4 class="text-white font-serif text-3xl mb-4">Финансы и ресурс</h4>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Где находится ваш финансовый потенциал и какие подсознательные или кармические действия блокируют материальное благополучие.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 3: ПОДХОД ЕКАТЕРИНЫ (ТЕМНАЯ 950) -->
+<section id="how-it-works" class="py-20 md:py-28 bg-slate-950 border-t border-slate-800 relative">
+    <!-- Широкий контейнер 7xl -->
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+            
+            <div class="lg:col-span-5 lg:sticky lg:top-24">
+                <div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden mb-8 border border-slate-800 shadow-xl">
+                    <img src="media/ekaterina-jyotish.webp" alt="Екатерина Савина - Ведический астролог" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 right-8">
+                        <h3 class="text-3xl font-serif text-white mb-1">Екатерина Савина</h3>
+                        <p class="text-teal-400/80 text-base font-sans tracking-wide">Ведический астролог</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 p-8 md:p-10 rounded-3xl border border-slate-800/80 relative">
+                    <span class="absolute -top-6 -left-2 text-7xl text-teal-900/40 font-serif">"</span>
+                    <p class="text-white font-serif leading-loose text-xl relative z-10 italic">
+                        Мой подход — не пугающие предсказания, а карта ваших возможностей. Я не говорю «вам суждено» — я показываю, где заложены ресурсы, и перевожу язык планет в понятные сценарии.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 pt-4 lg:pt-8">
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Бережный процесс работы</h2>
+                <p class="text-slate-300 font-sans text-base md:text-lg leading-relaxed mb-12">
+                    Я выстроила пошаговый алгоритм, чтобы вы знали, что вас ждёт, и чувствовали себя уверенно и спокойно на каждом этапе нашего взаимодействия.
+                </p>
+
+                <!-- ОБНОВЛЕННЫЙ ТАЙМЛАЙН -->
+                <div class="relative border-l-2 border-slate-700/80 ml-4 space-y-12 pb-8">
+                    
+                    <!-- Шаг 1 -->
+                    <div class="relative pl-8 md:pl-10 group">
+                        <!-- Светящееся кольцо вместо точки -->
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-950 border-2 border-teal-500 rounded-full shadow-[0_0_10px_rgba(20,184,166,0.5)]"></div>
+                        <!-- Убрали цифру 1 -->
+                        <h4 class="text-white font-serif text-2xl md:text-3xl mb-3">Вы присылаете свои данные</h4>
+                        <p class="text-slate-300 font-sans text-base md:text-lg leading-relaxed">
+                            Точные дата, время и место рождения. Также вы можете кратко описать свой запрос: что вас беспокоит или что хотите прояснить. Всё это можно отправить в мессенджере.
+                        </p>
+                    </div>
+
+                    <!-- Шаг 2 -->
+                    <div class="relative pl-8 md:pl-10 group">
+                        <!-- Светящееся кольцо вместо точки -->
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-950 border-2 border-teal-500 rounded-full shadow-[0_0_10px_rgba(20,184,166,0.5)]"></div>
+                        <!-- Убрали цифру 2 -->
+                        <h4 class="text-white font-serif text-2xl md:text-3xl mb-3">Я готовлю разбор <span class="text-teal-500/60 text-lg font-sans italic ml-2">(2–5 дней)</span></h4>
+                        <p class="text-slate-300 font-sans text-base md:text-lg leading-relaxed">
+                            Я строю вашу карту и составляю детальный письменный отчёт в формате PDF. Он содержит анализ по сферам жизни (личность, карьера, отношения) и индивидуальные рекомендации.
+                        </p>
+                    </div>
+
+                    <!-- Шаг 3 -->
+                    <div class="relative pl-8 md:pl-10 group">
+                        <!-- Светящееся кольцо вместо точки -->
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-950 border-2 border-teal-500 rounded-full shadow-[0_0_10px_rgba(20,184,166,0.5)]"></div>
+                        <!-- Убрали цифру 3 -->
+                        <h4 class="text-white font-serif text-2xl md:text-3xl mb-3">Изучение отчета</h4>
+                        <p class="text-slate-300 font-sans text-base md:text-lg leading-relaxed">
+                            Вы получаете готовый PDF, сможете прочитать его в спокойной обстановке, перечитывать важные места и делать пометки. Весь материал остаётся у вас навсегда.
+                        </p>
+                    </div>
+
+                    <!-- Шаг 4 -->
+                    <div class="relative pl-8 md:pl-10 group">
+                        <!-- Светящееся кольцо вместо точки -->
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-950 border-2 border-teal-500 rounded-full shadow-[0_0_10px_rgba(20,184,166,0.5)]"></div>
+                        <!-- Убрали цифру 4 -->
+                        <h4 class="text-white font-serif text-2xl md:text-3xl mb-3">Поддержка</h4>
+                        <p class="text-slate-300 font-sans text-base md:text-lg leading-relaxed">
+                            В течение 2-х недель после отправки отчёта я остаюсь на связи – вы можете написать мне с любыми уточнениями или вопросами, которые возникнут при чтении.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- СЕКЦИЯ 4: УСЛУГИ И ФОРМАТЫ (СВЕТЛАЯ 900) -->
+    <section id="services" class="pt-20 pb-12 md:pt-28 md:pb-16 bg-slate-900 border-t border-slate-800 scroll-mt-20">
+        <div class="max-w-6xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Форматы разборов</h2>
+                <p class="text-teal-400 font-sans text-lg md:text-xl font-medium max-w-3xl mx-auto leading-relaxed">
+                    Моя задача — перевести эти древние знания на понятный язык и дать вам конкретные инструменты.
+                </p>
+            </div>
+
+            <div class="space-y-4 max-w-5xl mx-auto">
+                
+                <!-- Тариф 1: Полный разбор -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Полный разбор натальной карты
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ Кармический паспорт личности</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-5 text-slate-300">Комплексный разбор по всем сферам жизни. Что включает в себя анализ:</p>
+                            <ul class="space-y-2.5 text-sm md:text-base text-slate-300 mb-6 ml-2">
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Анализ периодов и транзитов на 12 месяцев.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Анализ восходящего знака (Лагны) и положение ключевых планет.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Определение главного жизненного предназначения (Дхарма, Атма-карака).</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Анализ талантов, профессионального потенциала и финансового потока.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Психологический портрет, глубинная природа характера и подсознательные установки.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Выявление слабых зон гороскопа и разработка индивидуальных методов их гармонизации (Упайи).</span></li>
+                            </ul>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$150</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Тариф 2: Прогностическая консультация -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Прогностическая консультация
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ Периоды и Транзиты на 12 месяцев</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-4 text-slate-300">Для тех, кто хочет четко понимать, какие главные задачи стоят перед ними на ближайший год, где их ждут возможности для роста, а в каких сферах стоит проявить осторожность.</p>
+                            <p class="mb-6 text-slate-300 text-sm md:text-base leading-relaxed">Анализ текущих и предстоящих планетных периодов (Махадаш), определение временных окон для смены работы, брака, рождения детей или переездов, пошаговый план рекомендаций для мягкого прохождения кризисных или сложных периодов.</p>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$100</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Тариф 3: Совместимость партнеров -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Совместимость партнеров
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ Синастрия и карма отношений</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-4 text-slate-300">Для пар, планирующих брак, а также для тех, кто хочет наладить отношения в семье или проверить надежность бизнес-партнера.</p>
+                            <p class="mb-6 text-slate-300 text-sm md:text-base leading-relaxed">Анализ эмоциональной, психологической и физической совместимости, выявление точек конфликтов, «притирания» и кармических долгов друг перед другом. Прогноз развития отношений и рекомендации по преодолению семейных кризисов. Оценка финансового и социального процветания пары в союзе.</p>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$150</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Тариф 4: Детская карта -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Разбор натальной карты ребенка
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ До 14 лет</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-5 text-slate-300">Консультация проводится для родителей, чтобы помочь им понять внутренний мир ребёнка, раскрыть его врождённые таланты, выбрать верный вектор развития и избежать ошибок в воспитании.</p>
+                            <ul class="space-y-2.5 text-sm md:text-base text-slate-300 mb-6 ml-2">
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>К каким сферам (творчество, точные науки, спорт, языки, лидерство) у ребёнка есть способности и куда лучше направлять его энергию.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Потенциально уязвимые зоны организма, особенности психосоматики, рекомендации по режиму дня и активности.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Взаимоотношения с родителями и окружением.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Подходящий стиль обучения, особенности взаимодействия со сверстниками и учителями.</span></li>
+                            </ul>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$100</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Тариф 5: Соляр -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Варшапхал (Соляр)
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ Гороскоп на ваш личный год</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-5 text-slate-300">Консультация показывает главный вектор, возможности и риски вашего личного года (12 месяцев от даты рождения). <em class="text-teal-400/80">Оптимальное время проведения: за 2–4 недели до дня рождения или в течение месяца после него.</em></p>
+                            <ul class="space-y-2.5 text-sm md:text-base text-slate-300 mb-6 ml-2">
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Главная тема и управитель года: ключевой фокус (карьера, финансы, семья, здоровье).</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Помесячный прогноз.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Разбор потенциала доходов, карьерного роста, личной жизни и состояния здоровья.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Методы коррекции (Упайи): астрологические практики для смягчения рисков.</span></li>
+                            </ul>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$60</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Тариф 6: Детальный разбор сферы -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Детальный разбор сферы жизни
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ По Дробным картам (Варгам)</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-4 text-slate-300">Эта консультация создана для тех, кого интересует четкий и глубокий ответ по одной конкретной сфере.</p>
+                            <p class="mb-6 text-slate-300 text-sm md:text-base leading-relaxed">Доступные сферы для разбора: Финансы, карьера и бизнес; Личная жизнь и брак; Дети; Переезд и эмиграция; Недвижимость.</p>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$60</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Тариф 7: Медицинская астрология -->
+                <details class="group bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden open:border-teal-700/50 transition-colors duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 md:p-8 list-none [&::-webkit-details-marker]:hidden focus:outline-none hover:bg-slate-900 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full">
+                            <h3 class="font-serif text-xl md:text-2xl text-white group-open:text-teal-400 transition-colors pr-4 md:pr-0">
+                                Медицинская астрология
+                                <span class="text-sm font-sans text-slate-500 normal-case tracking-normal ml-1 md:ml-2">/ Диагностика вашего здоровья</span>
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 mt-2 md:mt-0 md:ml-auto shrink-0">
+                                <span class="inline-flex px-3 py-1 bg-teal-900/30 border border-teal-700/50 text-teal-400 rounded-full text-[10px] uppercase tracking-widest font-semibold">Онлайн / PDF</span>
+                                <span class="inline-flex px-3 py-1 bg-slate-800/50 border border-slate-700 text-slate-300 rounded-full text-[10px] uppercase tracking-widest font-semibold">2-5 дней</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-4">
+                            <span class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 group-open:bg-teal-900/30 group-open:text-teal-400 group-open:border-teal-700/50 transition-all">
+                                <svg class="w-4 h-4 transform group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </span>
+                        </div>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-8 pt-0 text-slate-300 font-sans text-base leading-relaxed border-t border-slate-800/50 mt-2">
+                        <div class="pt-6">
+                            <p class="mb-5 text-slate-300">Для тех, кто хочет диагностировать причины недомоганий, предупредить болезни и сбалансировать жизненную энергию.</p>
+                            <ul class="space-y-2.5 text-sm md:text-base text-slate-300 mb-6 ml-2">
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Определение конституции тела (Дош: Вата, Питта, Капха) на основе планетных энергий.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Выявление уязвимых органов и систем организма, склонности к заболеваниям.</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Анализ психологических и духовных причин болезней (включая кармические блоки).</span></li>
+                                <li class="flex gap-3"><span class="text-teal-500 text-lg leading-none">•</span> <span>Рекомендации по гармонизации здоровья, питанию и образу жизни.</span></li>
+                            </ul>
+                            <div class="flex items-center justify-between border-t border-slate-800 pt-6 mt-6">
+                                <div class="text-2xl font-serif text-white">$100</div>
+                                <a href="#contacts" class="text-teal-400 hover:text-teal-300 text-sm font-medium tracking-wide transition-colors">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+
+            <!-- УВЕДОМЛЕНИЕ О ВРЕМЕНИ РОЖДЕНИЯ -->
+            <div class="mt-12 bg-slate-950/50 border border-slate-800 p-8 rounded-2xl text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-teal-500 shrink-0">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-1">Точность времени рождения</h4>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed">Для построения точной натальной карты Джйотиш необходимо знать дату, город и время вашего рождения. Если вы не знаете точного времени, перед разбором может потребоваться процедура ректификации.</p>
+                </div>
+            </div>
+
+            <!-- ССЫЛКА НА ЧАСТЫЕ ВОПРОСЫ -->
+            <div class="text-center mt-6 w-full flex justify-center">
+                <a href="index.html#faq" class="inline-flex items-center gap-3 text-teal-500 hover:text-teal-400 font-medium text-base md:text-lg transition-colors group">
+                    <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Больше ответов на волнующие вопросы
+                    <span class="transform group-hover:translate-x-1.5 transition-transform duration-300">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 5: КОНТАКТЫ И ЗАПИСЬ (С КОСМОСОМ) -->
+    <section id="contacts" class="relative py-24 border-t border-white/5 overflow-hidden">
+        
+        <div class="absolute inset-0 z-0">
+            <img src="media/cosmos-footer.webp" alt="Звездное небо Джйотиш" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
+            
+            <h3 class="font-serif text-4xl text-white mb-4 font-bold [text-shadow:_0_4px_12px_rgb(0_0_0_/_100%),_0_1px_3px_rgb(0_0_0_/_100%)]">
+                Начать работу с картой
+            </h3>
+            
+            <p class="text-slate-200 font-sans text-base md:text-lg mb-10 font-medium [text-shadow:_0_3px_8px_rgb(0_0_0_/_100%),_0_1px_2px_rgb(0_0_0_/_100%)]">
+                Напишите мне для согласования даты и деталей разбора.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://t.me/KatrinSoundBliss" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-4 bg-teal-700 hover:bg-teal-600 text-white rounded-full font-medium transition duration-300 text-sm tracking-wide shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                    Написать в Telegram
+                </a>
+                <a href="https://wa.me/message/RZ2QRTAU4RWZH1" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-4 bg-teal-700 hover:bg-teal-600 text-white rounded-full font-medium transition duration-300 text-sm tracking-wide shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                    Написать в WhatsApp
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 8. ПОДВАЛ (КОНТАКТЫ, ПОЧТА И ДИСКЛЕЙМЕРЫ) -->
+<footer class="bg-black pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+    
+    <!-- Декоративное свечение на фоне -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-teal-900/50 to-transparent"></div>
+
+    <div class="max-w-[1400px] mx-auto px-6 xl:px-10">
+        
+        <!-- Сетка на 3 колонки -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 xl:gap-16 mb-20">
+            
+            <!-- Колонка 1: Бренд и Локация -->
+            <div class="flex flex-col">
+                <a href="index.html" class="inline-flex items-center gap-5 mb-8 group">
+                    <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
+                    <div class="flex flex-col justify-center">
+                        <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Екатерина & Дмитрий</span>
+                        <span class="font-sans text-slate-400 text-xs tracking-[0.2em] uppercase">Савины</span>
+                    </div>
+                </a>
+                <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+                    Комплексный подход к восстановлению внутреннего баланса через гималайские чаши, мудрость Аюрведы и астрологию Джйотиш.
+                </p>
+                <div class="flex items-center gap-3 text-teal-500 text-sm font-sans bg-teal-900/10 border border-teal-900/30 p-4 rounded-2xl w-max">
+                    <span class="relative flex h-2.5 w-2.5 shrink-0">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
+                    </span>
+                    <span>Текущая локация: Покхара, Непал<br><span class="text-xs text-teal-600">(и онлайн по всему миру)</span></span>
+                </div>
+            </div>
+
+            <!-- Колонка 2: Прямая связь (Мессенджеры и Почта) -->
+            <div class="flex flex-col">
+                <h4 class="text-white font-serif text-2xl mb-4">Контакты</h4>
+                <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+                    Для записи и вопросов используйте мессенджеры или отправьте нам письмо:
+                </p>
+                
+                <ul class="space-y-4 mb-6">
+                    <li>
+                        <a href="https://wa.me/message/RZ2QRTAU4RWZH1" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                            <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-teal-500 flex items-center justify-center text-teal-500 transition-all">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.086 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437-9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            </span>
+                            WhatsApp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/KatrinSoundBliss" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                            <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-teal-500 flex items-center justify-center text-teal-500 transition-all">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.5 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            </span>
+                            Telegram
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Почта сразу после мессенджеров -->
+                <div>
+                    <a href="mailto:savinsoundspace@gmail.com" class="inline-flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-teal-500 shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </span>
+                        savinsoundspace@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Колонка 3: Социальные сети -->
+            <div class="flex flex-col">
+                <h4 class="text-white font-serif text-2xl mb-4">Наша жизнь</h4>
+                <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+                    Делимся философией, кадрами из путешествий и закулисьем практик:
+                </p>
+                <ul class="space-y-4">
+                    <li>
+                        <a href="https://www.instagram.com/kate.savina?igsh=MXE4cDNvNGt3Z2lvbg%3D%3D&igsi=MXE4cDNvNGt3Z2lvbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                            <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-pink-500/50 flex items-center justify-center text-slate-400 group-hover:text-pink-400 transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </span>
+                            Instagram @kate.savina
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/1DmYaT3Yjy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                            <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-blue-500/50 flex items-center justify-center text-slate-400 group-hover:text-blue-400 transition-all">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </span>
+                            Facebook (Екатерина)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/19UBCH1Q5Z/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-slate-300 hover:text-white text-sm font-sans transition-colors">
+                            <span class="w-8 h-8 rounded-full bg-slate-900 border border-slate-700 group-hover:border-blue-500/50 flex items-center justify-center text-slate-400 group-hover:text-blue-400 transition-all">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </span>
+                            Facebook (Дмитрий)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Разделительная линия -->
+        <div class="w-full h-px bg-slate-900/80 mb-10"></div>
+
+        <!-- Дисклеймеры и Юридическая информация -->
+        <div class="flex flex-col lg:flex-row justify-between items-start gap-10">
+            <div class="max-w-4xl">
+                <p class="text-slate-600 text-[11px] font-sans leading-relaxed mb-3 uppercase tracking-widest font-semibold">Внимание</p>
+                <p class="text-slate-500 text-xs font-sans leading-relaxed text-justify mb-4">
+                    Услуги, представленные на сайте (саундхилинг, звуковой массаж, аюрведические консультации и консультации по системе Джйотиш), не являются медицинскими услугами, не заменяют профессиональную медицинскую помощь, диагностику или лечение. Все практики направлены на общую релаксацию, снижение стресса и гармонизацию внутреннего состояния. При наличии тяжелых заболеваний, психических расстройств, эпилепсии, установленном кардиостимуляторе или на ранних сроках беременности обязательно проконсультируйтесь с вашим лечащим врачом перед посещением сеанса. 
+                </p>
+                <p class="text-slate-500 text-xs font-sans leading-relaxed text-justify">
+                    Информация на сайте носит ознакомительный характер и не является публичной офертой. Точная стоимость и возможность проведения услуг рассчитываются индивидуально.
+                </p>
+            </div>
+            <div class="flex flex-col items-start lg:items-end gap-2 shrink-0 pt-2">
+                <p class="text-slate-600 text-xs font-sans text-left lg:text-right uppercase tracking-widest">© 2026 Екатерина и Дмитрий Савины.<br>Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Скрипт для мобильного меню -->
+<script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (burgerBtn && mobileMenu) {
+        burgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Закрываем меню при клике на любую ссылку внутри него
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+    }
+</script>
+</body>
+</html>
