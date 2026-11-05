@@ -10,6 +10,9 @@
 
       gtag('config', 'G-FYXGBLK178');
     </script>
+
+    <!-- Подтверждение Google Search Console -->
+    <meta name="google-site-verification" content="mkQWbBvU-ucqn3-i3vUaWgB2Efvcmug4PaiqMhWS_4E" />
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,38 +113,232 @@
         </div>
     </nav>
 
-   <!-- Сетка с фотографиями (С ИСПРАВЛЕННЫМ ОТСТУПОМ СВЕРХУ) -->
-    <main class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-12 md:pt-40 md:pb-20">
+ <!-- Сетка с фотографиями и видео (Коллаж) -->
+<main class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-12 md:pt-40 md:pb-20">
+    
+    <p class="text-slate-200 text-base md:text-lg md:text-xl mx-auto text-center mb-12 font-sans leading-relaxed">
+        Моменты наших виброакустических практик, групповых медитаций и ретритов.
+    </p>
+
+    <!-- Сама Галерея (Коллаж) -->
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6">
         
-        <p class="text-slate-200 text-base md:text-lg md:text-xl mx-auto text-center mb-12 font-sans leading-relaxed">
-            Моменты наших виброакустических практик, групповых медитаций и ретритов.
-        </p>
-
-        <!-- Сама Галерея -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            
-            <!-- Карточка фото 1 -->
-            <div class="aspect-square overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group">
-                <!-- Замени media/photo1.jpg на реальное название твоего фото -->
-                <img src="media/photo1.jpg" alt="Мероприятие" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 hover:opacity-100">
-            </div>
-
-            <!-- Карточка фото 2 -->
-            <div class="aspect-square overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group">
-                <!-- Замени media/photo2.jpg на реальное название твоего фото -->
-                <img src="media/photo2.jpg" alt="Мероприятие" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 hover:opacity-100">
-            </div>
-
-            <!-- Карточка фото 3 -->
-            <div class="aspect-square overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group">
-                <!-- Замени media/photo3.jpg на реальное название твоего фото -->
-                <img src="media/photo3.jpg" alt="Мероприятие" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 hover:opacity-100">
-            </div>
-
-            <!-- Чтобы добавить больше фото, просто скопируй блок <div class="aspect-square..."> целиком и вставь ниже -->
-
+        <!-- Карточка фото 1 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/NXGH7734.webp')">
+            <img src="media/gallery/NXGH7734.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
         </div>
-    </main>
+
+        <!-- Карточка фото 2 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/QYYM1473.webp')">
+            <img src="media/gallery/QYYM1473.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 3 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/BQSL0875.webp')">
+            <img src="media/gallery/BQSL0875.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 4 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/4.webp')">
+            <img src="media/gallery/4.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 1 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v1.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 5 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/5.webp')">
+            <img src="media/gallery/5.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 6 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/6.webp')">
+            <img src="media/gallery/6.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 2 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v2.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Контейнер для видео 3 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v3.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 7 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/7.webp')">
+            <img src="media/gallery/7.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 4 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v4.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Контейнер для видео 5 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v5.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 8 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/8.webp')">
+            <img src="media/gallery/8.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 6 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v6.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 9 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/9.webp')">
+            <img src="media/gallery/9.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 10 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/10.webp')">
+            <img src="media/gallery/10.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 11 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/11.webp')">
+            <img src="media/gallery/11.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 12 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/12.webp')">
+            <img src="media/gallery/12.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 7 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v7.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 13 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/13.webp')">
+            <img src="media/gallery/13.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 8 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v8.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 14 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/14.webp')">
+            <img src="media/gallery/14.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Контейнер для видео 9 (ИСПРАВЛЕНО ДЛЯ КОЛЛАЖА) -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800">
+            <video 
+                src="media/gallery/v9.mp4" 
+                controls 
+                preload="metadata"
+                playsinline
+                class="w-full h-auto object-cover outline-none">
+            </video>
+        </div>
+
+        <!-- Карточка фото 15 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/15.webp')">
+            <img src="media/gallery/15.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 16 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/16.webp')">
+            <img src="media/gallery/16.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 17 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/17.webp')">
+            <img src="media/gallery/17.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 18 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/18.webp')">
+            <img src="media/gallery/18.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 19 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/19.webp')">
+            <img src="media/gallery/19.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 20 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/20.webp')">
+            <img src="media/gallery/20.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 21 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/21.webp')">
+            <img src="media/gallery/21.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 22 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/22.webp')">
+            <img src="media/gallery/22.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+        <!-- Карточка фото 23 -->
+        <div class="break-inside-avoid mb-4 md:mb-6 overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 group cursor-zoom-in" onclick="openModal('media/gallery/23.webp')">
+            <img src="media/gallery/23.webp" alt="Мероприятие" class="w-full h-auto transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 pointer-events-none">
+        </div>
+
+    </div>
+</main>
 
 <!-- 8. ПОДВАЛ (КОНТАКТЫ, ПОЧТА И ДИСКЛЕЙМЕРЫ) -->
 <footer class="bg-black pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
@@ -269,26 +466,84 @@
     </div>
 </footer>
 
-<!-- Скрипт для мобильного меню -->
-<script>
-    const burgerBtn = document.getElementById('burger-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if (burgerBtn && mobileMenu) {
-        burgerBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex');
-        });
+<!-- ========================================== -->
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ГАЛЕРЕИ                 -->
+<!-- ========================================== -->
+<div id="imageModal" class="fixed inset-0 z-[60] hidden bg-slate-950/90 backdrop-blur-sm items-center justify-center p-4 transition-opacity duration-300 opacity-0" onclick="closeModal()">
+    <button class="absolute top-4 right-6 md:top-6 md:right-8 text-white hover:text-slate-400 text-4xl font-light focus:outline-none z-50 transition-colors" onclick="closeModal()">&times;</button>
+    <img id="modalImage" src="" alt="Увеличенное изображение" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95" onclick="event.stopPropagation()">
+</div>
 
-        // Закрываем меню при клике на любую ссылку внутри него
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
+<!-- ========================================== -->
+<!-- СКРИПТЫ                                    -->
+<!-- ========================================== -->
+<script>
+    // 1. Скрипт для мобильного меню
+    document.addEventListener('DOMContentLoaded', () => {
+        const burgerBtn = document.getElementById('burger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (burgerBtn && mobileMenu) {
+            burgerBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
             });
-        });
-    }
+
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                });
+            });
+        }
+    });
+
+    // 2. Скрипт для модального окна галереи
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+
+    // Делаем функции глобальными, чтобы HTML их точно видел
+    window.openModal = function(imageSrc) {
+        if (!modal || !modalImg) return;
+        
+        modalImg.src = imageSrc;
+        
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        
+        setTimeout(() => {
+            modal.classList.remove('opacity-0');
+            modalImg.classList.remove('scale-95');
+            modalImg.classList.add('scale-100');
+        }, 10);
+        
+        document.body.style.overflow = 'hidden'; 
+    };
+
+    window.closeModal = function() {
+        if (!modal || !modalImg) return;
+        
+        modal.classList.add('opacity-0');
+        modalImg.classList.remove('scale-100');
+        modalImg.classList.add('scale-95');
+        
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            modalImg.src = '';
+        }, 300); 
+        
+        document.body.style.overflow = ''; 
+    };
+
+    // Закрытие по кнопке Esc
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape" && modal && !modal.classList.contains('hidden')) {
+            window.closeModal();
+        }
+    });
 </script>
+
 </body>
 </html>
