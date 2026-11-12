@@ -49,6 +49,13 @@
             history.scrollRestoration = 'manual';
         }
     </script>
+
+    <!-- Иконки для вкладки и поиска -->
+<link rel="icon" type="image/png" href="media/favicon.png">
+<link rel="apple-touch-icon" href="media/favicon.png">
+<!-- Принудительное название сайта для Google -->
+<meta property="og:site_name" content="Savin Sound Space">
+
 </head>
 <body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden flex flex-col min-h-screen">
 
@@ -97,7 +104,8 @@
     </nav>
 
     <!-- ПЕРВЫЙ ЭКРАН (HERO) -->
-    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <!-- ИСПРАВЛЕНО: Добавлен класс pt-28 для защиты от наезжания под меню -->
+    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28">
         
         <!-- Фоновое изображение -->
         <div class="absolute inset-0 z-0">

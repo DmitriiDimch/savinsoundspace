@@ -43,7 +43,21 @@
     <meta property="og:description" content="A comprehensive approach to restoring inner balance through Himalayan singing bowls, Ayurvedic wisdom, and Jyotish astrology.">
     <meta property="og:image" content="https://savinsoundspace.com/media/og-integral.jpg">
 
+    <!-- Блокировка фантомного скролла мобильных браузеров -->
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
+
+    <!-- Иконки для вкладки и поиска -->
+<link rel="icon" type="image/png" href="media/favicon.png">
+<link rel="apple-touch-icon" href="media/favicon.png">
+<!-- Принудительное название сайта для Google -->
+<meta property="og:site_name" content="Savin Sound Space">
+
 </head>
+
 <body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden scroll-smooth">
 
     <!-- NAVIGATION BAR -->
@@ -94,7 +108,7 @@
         <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-white/5 flex-col items-center py-8 gap-6 shadow-2xl xl:hidden">
             <a href="index-en.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Home</a>
             <a href="index-en.html#about" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">About Us</a>
-            <a href="index-en.html#services" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Services</a>
+            <a href="#services" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Services</a>
             <a href="index-en.html#instruments" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Instruments</a>
             <a href="index-en.html#reviews" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Reviews</a>
             <a href="index-en.html#faq" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">FAQ</a>
@@ -112,43 +126,44 @@
     </nav>
 
     <main>
-    <!-- FIRST SCREEN (HERO) -->
-    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+   <!-- FIRST SCREEN (HERO) -->
+<!-- ИСПРАВЛЕНО: Добавлен класс pt-28 для защиты от фиксированного меню -->
+<header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28">
+    
+    <!-- Background image -->
+    <div class="absolute inset-0 z-0">
+        <img src="media/integral-hero.webp" alt="Integral Accompaniment" class="w-full h-full object-cover object-bottom">
+        <!-- Softer darkening (50%) -->
+        <div class="absolute inset-0 bg-slate-950/50"></div>
+    </div>
+
+    <!-- Raised text (mt-4) -->
+    <div class="relative z-10 px-6 max-w-4xl mx-auto flex flex-col items-center text-center mt-4">
         
-        <!-- Background image -->
-        <div class="absolute inset-0 z-0">
-            <img src="media/integral-hero.webp" alt="Integral Accompaniment" class="w-full h-full object-cover object-bottom">
-            <!-- Softer darkening (50%) -->
-            <div class="absolute inset-0 bg-slate-950/50"></div>
+        <div class="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
+            <span class="text-teal-400 text-xs">✨</span>
+            <span class="text-slate-300 text-[10px] uppercase tracking-widest">Online Mentorship</span>
         </div>
 
-        <!-- Raised text (mt-4) -->
-        <div class="relative z-10 px-6 max-w-4xl mx-auto flex flex-col items-center text-center mt-4">
-            
-            <div class="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
-                <span class="text-teal-400 text-xs">✨</span>
-                <span class="text-slate-300 text-[10px] uppercase tracking-widest">Online Mentorship</span>
-            </div>
+        <!-- Single line header, fully white -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-8 font-bold [text-shadow:_0_4px_12px_rgb(0_0_0_/_100%),_0_1px_3px_rgb(0_0_0_/_100%)]">
+            Integral Accompaniment
+        </h1>
 
-            <!-- Single line header, fully white -->
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-8 font-bold [text-shadow:_0_4px_12px_rgb(0_0_0_/_100%),_0_1px_3px_rgb(0_0_0_/_100%)]">
-                Integral Accompaniment
-            </h1>
-
-            <div class="max-w-3xl mx-auto mb-12">
-                <p class="text-lg md:text-xl text-white font-sans leading-relaxed font-medium [text-shadow:_0_3px_8px_rgb(0_0_0_/_100%),_0_1px_2px_rgb(0_0_0_/_100%)]">
-                    Long-term individual programs combining Ayurveda, Jyotish, sound therapy, and yoga for sustainable inner transformation.
-                </p>
-            </div>
-
-            <a href="#services" class="inline-flex flex-col items-center gap-3 text-slate-400 hover:text-teal-400 transition-colors group">
-                <span class="text-[10px] uppercase tracking-widest">Choose a Program</span>
-                <div class="w-px h-12 bg-slate-700 relative overflow-hidden">
-                    <div class="w-full h-1/2 bg-teal-400 absolute top-0 left-0 animate-bounce"></div>
-                </div>
-            </a>
+        <div class="max-w-3xl mx-auto mb-12">
+            <p class="text-lg md:text-xl text-white font-sans leading-relaxed font-medium [text-shadow:_0_3px_8px_rgb(0_0_0_/_100%),_0_1px_2px_rgb(0_0_0_/_100%)]">
+                Long-term individual programs combining Ayurveda, Jyotish, sound therapy, and yoga for sustainable inner transformation.
+            </p>
         </div>
-    </header>
+
+        <a href="#services" class="inline-flex flex-col items-center gap-3 text-slate-400 hover:text-teal-400 transition-colors group">
+            <span class="text-[10px] uppercase tracking-widest">Choose a Program</span>
+            <div class="w-px h-12 bg-slate-700 relative overflow-hidden">
+                <div class="w-full h-1/2 bg-teal-400 absolute top-0 left-0 animate-bounce"></div>
+            </div>
+        </a>
+    </div>
+</header>
 
     <!-- PRACTICAL APPLICATION (Journal style without cards) -->
     <section class="pt-24 pb-24 bg-slate-950 relative overflow-hidden">
