@@ -18,7 +18,7 @@
     <!-- Стандартная настройка адаптивности (зум разрешен для удобства пользователей) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторские виброакустические практики | Sound Healing</title>
-    <meta name="description" content="Глубокое восстановление через вибрацию и звук в Покхаре. Звуковая терапия, поющие чаши, Аюрведа и Джйотиш от сертифицированных мастеров Екатерины и Дмитрия Савиных.">
+    <meta name="description" content="Глубокое восстановление через вибрацию и звук на Шри-Ланке. Звуковая терапия, поющие чаши, Аюрведа и Джйотиш от сертифицированных мастеров Екатерины и Дмитрия Савиных.">
     
     <!-- Подключаем шрифты (Cormorant Garamond и Montserrat) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,16 +98,14 @@
 </a>
 
             <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
-            <!-- ИСПРАВЛЕНО: добавлен shrink-0, чтобы кнопка не пропадала -->
-            <button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="4" y1="12" x2="20" y2="12"></line>
-                    <line x1="4" y1="6" x2="20" y2="6"></line>
-                    <line x1="4" y1="18" x2="20" y2="18"></line>
-                </svg>
-            </button>
-
-        </div>
+<!-- ИСПРАВЛЕНО: добавлен shrink-0, чтобы кнопка не пропадала -->
+<button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0 relative z-50">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="6" x2="20" y2="6"></line>
+        <line x1="4" y1="18" x2="20" y2="18"></line>
+    </svg>
+</button>
         
        <!-- АККУРАТНОЕ МОБИЛЬНОЕ МЕНЮ (Выпадает сверху) -->
         <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-slate-950/95 backdrop-blur-md border-b border-white/5 flex-col items-center py-8 gap-6 shadow-2xl xl:hidden">
@@ -131,44 +129,44 @@
             </a>
         </div>
     </nav>
-    <!-- 1. HERO СЕГМЕНТ (Главный экран) -->
-    <section class="bg-[url('media/hero-bg.webp')] bg-cover bg-center bg-no-repeat min-h-screen relative flex items-end">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+   <!-- 1. HERO СЕГМЕНТ (Главный экран) -->
+<section class="bg-[url('media/hero-bg.webp')] bg-cover bg-center bg-no-repeat min-h-screen relative flex items-end">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+    
+    <!-- Локация -->
+    <div class="absolute top-32 right-6 z-20 hidden md:inline-flex items-center gap-3 bg-black/40 border border-slate-500/50 px-5 py-2 rounded-full backdrop-blur-sm">
+        <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
+        </span>
+        <span class="text-slate-300 text-sm tracking-wide font-sans font-light">📍 Сейчас мы находимся: Мидигама, Шри-Ланка</span>
+    </div>
+    
+    <!-- ИСПРАВЛЕНО: Добавлен класс pt-32 для защиты заголовка от наезжания под шапку -->
+    <div class="relative max-w-5xl mx-auto px-6 pt-32 pb-8 md:pb-12 text-center w-full">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-medium text-white leading-tight">
+            Глубокое восстановление <br> через вибрацию и звук
+        </h1>
         
-       <!-- Локация -->
-        <div class="absolute top-32 right-6 z-20 hidden md:inline-flex items-center gap-3 bg-black/40 border border-slate-500/50 px-5 py-2 rounded-full backdrop-blur-sm">
-            <span class="relative flex h-2.5 w-2.5">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
-            </span>
-            <span class="text-slate-300 text-sm tracking-wide font-sans font-light">📍 Сейчас мы находимся: Покхара, Непал</span>
-        </div>
-        
-        <!-- Уменьшили нижний отступ (pb-8 md:pb-12), чтобы опустить блок ниже -->
-        <div class="relative max-w-5xl mx-auto px-6 pb-8 md:pb-12 text-center w-full">
-           <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-medium text-white leading-tight">
-                Глубокое восстановление <br> через вибрацию и звук
-            </h1>
+        <div class="pt-12 -translate-y-1 md:-translate-y-2">
+            <!-- Описание с нужным интервалом и трекингом -->
+            <p class="text-lg md:text-xl font-sans text-slate-100 max-w-3xl mx-auto leading-loose tracking-wider">
+                Мы помогаем снять напряжение с тела, успокоить нервную систему и вернуть внутренний баланс через гималайские чаши, мудрость Аюрведы и точность астрологии Джйотиш. Комплексный подход, чтобы перевести вас из стресса в точку абсолютной ясности.
+            </p>
             
-            <div class="pt-12 -translate-y-1 md:-translate-y-2">
-                <!-- Описание с нужным интервалом и трекингом -->
-                <p class="text-lg md:text-xl font-sans text-slate-100 max-w-3xl mx-auto leading-loose tracking-wider">
-                    Мы помогаем снять напряжение с тела, успокоить нервную систему и вернуть внутренний баланс через гималайские чаши, мудрость Аюрведы и точность астрологии Джйотиш. Комплексный подход, чтобы перевести вас из стресса в точку абсолютной ясности.
-                </p>
-                
-                <div class="mt-12 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
-                    <a href="#services" class="px-10 py-4 bg-teal-700 text-white rounded-full text-sm uppercase tracking-wider font-medium hover:bg-teal-600 transition w-full md:w-auto shadow-lg shadow-teal-900/50">
-                        Выбрать направление
-                    </a>
-                    <a href="#about" class="px-10 py-4 bg-black/40 text-white border border-slate-500 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-black/60 transition w-full md:w-auto">
-                        О мастерах
-                    </a>
-                </div>
+            <div class="mt-12 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#services" class="px-10 py-4 bg-teal-700 text-white rounded-full text-sm uppercase tracking-wider font-medium hover:bg-teal-600 transition w-full md:w-auto shadow-lg shadow-teal-900/50">
+                    Выбрать направление
+                </a>
+                <a href="#about" class="px-10 py-4 bg-black/40 text-white border border-slate-500 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-black/60 transition w-full md:w-auto">
+                    О мастерах
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <main>
+<main>
 
         <!-- 2. О НАС (Блок «Мастера и Метод» - Часть 1) -->
         <section id="about" class="py-24 bg-slate-950 text-slate-200">
@@ -520,7 +518,7 @@
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
                         </span>
                         <span class="text-teal-50 text-sm md:text-base font-medium tracking-wide">
-                            📍 Текущая локация: Покхара, Непал
+                            📍 Текущая локация: Мидигама, Шри-Ланка
                         </span>
                     </div>
                 </div>
@@ -1414,7 +1412,7 @@
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
                         </span>
-                        <span>Текущая локация: Покхара, Непал<br><span class="text-xs text-teal-600">(и онлайн по всему миру)</span></span>
+                        <span>Текущая локация: Мидигама, Шри-Ланка<br><span class="text-xs text-teal-600">(и онлайн по всему миру)</span></span>
                     </div>
                 </div>
 
