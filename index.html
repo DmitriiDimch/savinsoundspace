@@ -61,110 +61,56 @@
 <body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden">
 
 <!-- ЕДИНАЯ ВЕРХНЯЯ ПАНЕЛЬ -->
-    <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-sm border-b border-white/5">
-        <div class="w-full mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
-            
-            <!-- Логотип и Заголовок -->
-            <!-- ИСПРАВЛЕНО: добавлено min-w-0 и mr-4, чтобы текст мог сжиматься -->
-            <a href="#" class="flex items-center gap-2 sm:gap-4 group h-full relative z-10 min-w-0 mr-4">
-                <!-- Увеличили масштаб до 125% и добавили origin-left. shrink-0 оставлен только для картинки -->
-                <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-12 sm:h-full w-auto object-contain transition-transform duration-300 group-hover:scale-125 origin-left shrink-0">
-                
-                <!-- ИСПРАВЛЕНО: text-[12px] на мобильных, truncate вместо whitespace-nowrap -->
-                <div class="flex flex-col justify-center min-w-0">
-                    <span class="font-serif text-white text-[12px] sm:text-[15px] lg:text-[20px] tracking-[0.1em] uppercase leading-none truncate">Екатерина & Дмитрий Савины</span>
-                    <span class="font-sans text-white text-[7px] sm:text-[9px] lg:text-[10px] tracking-[0.2em] uppercase mt-1 lg:mt-1.5 truncate">Сертифицированные мастера</span>
-                </div>
-            </a>
-
-            <!-- ДЕСКТОПНОЕ МЕНЮ (Показываем ТОЛЬКО на широких экранах - класс xl:flex) -->
-            <div class="hidden xl:flex items-center gap-4 2xl:gap-6 ml-auto shrink-0">
-                <a href="index.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Главная<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                <a href="#about" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">О нас<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                <a href="#services" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Услуги<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                <a href="#instruments" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Инструменты<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                <a href="#reviews" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Отзывы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                <a href="#faq" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Ответы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                <a href="gallery.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Галерея<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
-                
-                <!-- Кнопка Записаться -->
-                <a href="#contacts" class="bg-teal-700 hover:bg-teal-600 text-white text-[10px] 2xl:text-xs font-sans font-medium tracking-widest uppercase px-5 py-2.5 rounded-full transition-all ml-2 whitespace-nowrap">
-                    Записаться
-                </a>
-
-               <!-- Кнопка EN -->
-<a href="index-en.html" class="text-white bg-slate-800/50 hover:bg-teal-700 border border-slate-500 hover:border-teal-600 text-[10px] 2xl:text-xs font-sans font-medium tracking-widest transition-all rounded-full px-4 py-2.5 ml-1 flex items-center justify-center">
-    EN
-</a>
-
-            <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
-<!-- ИСПРАВЛЕНО: добавлен shrink-0, чтобы кнопка не пропадала -->
-<button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0 relative z-50">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="4" y1="12" x2="20" y2="12"></line>
-        <line x1="4" y1="6" x2="20" y2="6"></line>
-        <line x1="4" y1="18" x2="20" y2="18"></line>
-    </svg>
-</button>
+<nav class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-sm border-b border-white/5">
+    <div class="w-full mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
         
-       <!-- АККУРАТНОЕ МОБИЛЬНОЕ МЕНЮ (Выпадает сверху) -->
-        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-slate-950/95 backdrop-blur-md border-b border-white/5 flex-col items-center py-8 gap-6 shadow-2xl xl:hidden">
-            <a href="index.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Главная</a>
-            <a href="#about" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">О нас</a>
-            <a href="#services" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Услуги</a>
-            <a href="#instruments" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Инструменты</a>
-            <a href="#reviews" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Отзывы</a>
-            <a href="#faq" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Ответы</a>
-            
-            <!-- НОВАЯ ССЫЛКА НА ГАЛЕРЕЮ -->
-            <a href="gallery.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Галерея</a>
-            
-            <div class="w-12 h-px bg-slate-800 my-2"></div>
-            
-            <a href="#contacts" class="mobile-link bg-teal-700 hover:bg-teal-600 text-white text-xs font-sans font-medium tracking-widest uppercase px-8 py-3 rounded-full transition-colors">
-                Записаться
-            </a>
-            <a href="index-en.html" class="text-slate-400 hover:text-white text-xs font-sans tracking-widest uppercase mt-2 transition-colors">
-                EN (English)
-            </a>
-        </div>
-    </nav>
-   <!-- 1. HERO СЕГМЕНТ (Главный экран) -->
-<section class="bg-[url('media/hero-bg.webp')] bg-cover bg-center bg-no-repeat min-h-screen relative flex items-end">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-    
-    <!-- Локация -->
-    <div class="absolute top-32 right-6 z-20 hidden md:inline-flex items-center gap-3 bg-black/40 border border-slate-500/50 px-5 py-2 rounded-full backdrop-blur-sm">
-        <span class="relative flex h-2.5 w-2.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
-        </span>
-        <span class="text-slate-300 text-sm tracking-wide font-sans font-light">📍 Сейчас мы находимся: Мидигама, Шри-Ланка</span>
-    </div>
-    
-    <!-- ИСПРАВЛЕНО: Добавлен класс pt-32 для защиты заголовка от наезжания под шапку -->
-    <div class="relative max-w-5xl mx-auto px-6 pt-32 pb-8 md:pb-12 text-center w-full">
-        <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-medium text-white leading-tight">
-            Глубокое восстановление <br> через вибрацию и звук
-        </h1>
-        
-        <div class="pt-12 -translate-y-1 md:-translate-y-2">
-            <!-- Описание с нужным интервалом и трекингом -->
-            <p class="text-lg md:text-xl font-sans text-slate-100 max-w-3xl mx-auto leading-loose tracking-wider">
-                Мы помогаем снять напряжение с тела, успокоить нервную систему и вернуть внутренний баланс через гималайские чаши, мудрость Аюрведы и точность астрологии Джйотиш. Комплексный подход, чтобы перевести вас из стресса в точку абсолютной ясности.
-            </p>
-            
-            <div class="mt-12 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
-                <a href="#services" class="px-10 py-4 bg-teal-700 text-white rounded-full text-sm uppercase tracking-wider font-medium hover:bg-teal-600 transition w-full md:w-auto shadow-lg shadow-teal-900/50">
-                    Выбрать направление
-                </a>
-                <a href="#about" class="px-10 py-4 bg-black/40 text-white border border-slate-500 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-black/60 transition w-full md:w-auto">
-                    О мастерах
-                </a>
+        <!-- Логотип и Заголовок -->
+        <a href="#" class="flex items-center gap-2 sm:gap-4 group h-full relative z-10 min-w-0 mr-4">
+            <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-12 sm:h-full w-auto object-contain transition-transform duration-300 group-hover:scale-125 origin-left shrink-0">
+            <div class="flex flex-col justify-center min-w-0">
+                <span class="font-serif text-white text-[12px] sm:text-[15px] lg:text-[20px] tracking-[0.1em] uppercase leading-none truncate">Екатерина & Дмитрий Савины</span>
+                <span class="font-sans text-white text-[7px] sm:text-[9px] lg:text-[10px] tracking-[0.2em] uppercase mt-1 lg:mt-1.5 truncate">Сертифицированные мастера</span>
             </div>
-        </div>
+        </a>
+
+        <!-- ДЕСКТОПНОЕ МЕНЮ -->
+        <div class="hidden xl:flex items-center gap-4 2xl:gap-6 ml-auto shrink-0">
+            <a href="index.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Главная<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="#about" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">О нас<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="#services" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Услуги<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="#instruments" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Инструменты<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="#reviews" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Отзывы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="#faq" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Ответы<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="gallery.html" class="relative text-slate-200 hover:text-white text-[10px] 2xl:text-xs font-sans tracking-widest uppercase transition-all whitespace-nowrap group/link py-1">Галерея<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-teal-400 transition-all duration-300 group-hover/link:w-full"></span></a>
+            <a href="#contacts" class="bg-teal-700 hover:bg-teal-600 text-white text-[10px] 2xl:text-xs font-sans font-medium tracking-widest uppercase px-5 py-2.5 rounded-full transition-all ml-2 whitespace-nowrap">Записаться</a>
+            <a href="index-en.html" class="text-white bg-slate-800/50 hover:bg-teal-700 border border-slate-500 hover:border-teal-600 text-[10px] 2xl:text-xs font-sans font-medium tracking-widest transition-all rounded-full px-4 py-2.5 ml-1 flex items-center justify-center">EN</a>
+        </div> <!-- ИСПРАВЛЕНО: Закрыли десктопное меню до кнопки бургера -->
+
+        <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
+        <button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0 relative z-50">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+        </button>
+        
+    </div> <!-- ИСПРАВЛЕНО: Закрыли главный флекс-контейнер до выпадающего меню -->
+
+    <!-- АККУРАТНОЕ МОБИЛЬНОЕ МЕНЮ (Выпадает сверху) -->
+    <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-slate-950/95 backdrop-blur-md border-b border-white/5 flex-col items-center py-8 gap-6 shadow-2xl xl:hidden">
+        <a href="index.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Главная</a>
+        <a href="#about" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">О нас</a>
+        <a href="#services" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Услуги</a>
+        <a href="#instruments" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Инструменты</a>
+        <a href="#reviews" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Отзывы</a>
+        <a href="#faq" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Ответы</a>
+        <a href="gallery.html" class="mobile-link text-slate-200 hover:text-teal-400 text-sm font-sans tracking-widest uppercase transition-colors">Галерея</a>
+        <div class="w-12 h-px bg-slate-800 my-2"></div>
+        <a href="#contacts" class="mobile-link bg-teal-700 hover:bg-teal-600 text-white text-xs font-sans font-medium tracking-widest uppercase px-8 py-3 rounded-full transition-colors">Записаться</a>
+        <a href="index-en.html" class="text-slate-400 hover:text-white text-xs font-sans tracking-widest uppercase mt-2 transition-colors">EN (English)</a>
     </div>
-</section>
+</nav>
 
 <main>
 
