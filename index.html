@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru" class="scroll-smooth scroll-pt-20">
 <head>
+    <style>
+  .bg-custom-hero { background-position: 80% bottom; }
+  @media (min-width: 768px) { .bg-custom-hero { background-position: center; } }
+</style>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYXGBLK178"></script>
     <script>
@@ -119,7 +124,7 @@
 </nav>
 
 <!-- 1. HERO СЕГМЕНТ (Главный экран) -->
-<section class="bg-[url('media/hero-bg.webp')] bg-cover bg-[80%_bottom] md:bg-center bg-no-repeat min-h-screen relative flex items-end">
+<section class="bg-[url('media/hero-bg.webp')] bg-cover bg-custom-hero bg-no-repeat min-h-screen relative flex items-end">
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 md:from-black/80 via-slate-900/70 md:via-black/20 to-slate-900/30 md:to-transparent"></div>
     
     <!-- Локация -->
