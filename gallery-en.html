@@ -351,26 +351,19 @@
         <div class="max-w-[1400px] mx-auto px-6 xl:px-10">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 xl:gap-16 mb-20">
                 
-                <!-- Column 1: Brand & Location -->
-                <div class="flex flex-col">
-                    <a href="index-en.html" class="flex items-center gap-5 mb-8 group inline-flex">
-                        <img src="media/LogoR-removebg-preview.webp" alt="Logo" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
-                        <div class="flex flex-col justify-center">
-                            <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Ekaterina & Dmitriy</span>
-                            <span class="font-sans text-slate-400 text-xs tracking-[0.2em] uppercase">Savin</span>
-                        </div>
-                    </a>
-                    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
-                        A comprehensive approach to restoring inner balance through Himalayan singing bowls, Ayurvedic wisdom, and Jyotish astrology.
-                    </p>
-                    <div class="flex items-center gap-3 text-teal-500 text-sm font-sans bg-teal-900/10 border border-teal-900/30 p-4 rounded-2xl w-max">
-                        <span class="relative flex h-2.5 w-2.5 shrink-0">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
-                        </span>
-                        <span>Current Location: Midigama, Sri-Lanka<br><span class="text-xs text-teal-600">(and online worldwide)</span></span>
-                    </div>
-                </div>
+                <!-- Column 1: Brand -->
+<div class="flex flex-col">
+    <a href="index-en.html" class="flex items-center gap-5 mb-8 group inline-flex">
+        <img src="media/LogoR-removebg-preview.webp" alt="Logo" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
+        <div class="flex flex-col justify-center">
+            <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Ekaterina & Dmitriy</span>
+            <span class="font-sans text-slate-400 text-xs tracking-[0.2em] uppercase">Savin</span>
+        </div>
+    </a>
+    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+        A comprehensive approach to restoring inner balance through Himalayan singing bowls, Ayurvedic wisdom, and Jyotish astrology.
+    </p>
+</div>
 
                 <!-- Column 2: Direct Contact -->
                 <div class="flex flex-col">
@@ -483,17 +476,36 @@
         const mobileMenu = document.getElementById('mobile-menu');
         
         if (burgerBtn && mobileMenu) {
-            burgerBtn.addEventListener('click', () => {
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            
+            // Открытие/закрытие меню по клику на бургер
+            burgerBtn.addEventListener('click', (event) => {
+                event.stopPropagation(); // Останавливаем клик
                 mobileMenu.classList.toggle('hidden');
                 mobileMenu.classList.toggle('flex');
             });
 
-            const mobileLinks = mobileMenu.querySelectorAll('a');
+            // Автоматическое закрытие при клике на любую ссылку
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
                     mobileMenu.classList.remove('flex');
                 });
+            });
+
+            // Умное закрытие по кликам на пустой области
+            document.addEventListener('click', (event) => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    // Клик ВНЕ меню и НЕ по кнопке
+                    const clickedOutside = !mobileMenu.contains(event.target) && !burgerBtn.contains(event.target);
+                    // Клик точно по подложке самого меню
+                    const clickedOnEmptySpace = event.target === mobileMenu;
+
+                    if (clickedOutside || clickedOnEmptySpace) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                    }
+                }
             });
         }
     });

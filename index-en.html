@@ -124,17 +124,8 @@
     </nav>
 
   <!-- 1. HERO SECTION (Main Screen) -->
-<section class="bg-[url('media/hero-bg.webp')] bg-cover bg-custom-hero bg-no-repeat min-h-screen relative flex items-end">
+<section class="bg-[url('media/hero-bg.webp')] bg-cover bg-custom-hero bg-no-repeat min-h-[100dvh] relative flex items-end">
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 md:from-black/80 via-slate-900/70 md:via-black/20 to-slate-900/30 md:to-transparent"></div>
-        
-    <!-- Location -->
-    <div class="absolute top-32 right-6 z-20 hidden md:inline-flex items-center gap-3 bg-black/40 border border-slate-500/50 px-5 py-2 rounded-full backdrop-blur-sm">
-        <span class="relative flex h-2.5 w-2.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
-        </span>
-        <span class="text-slate-300 text-sm tracking-wide font-sans font-light">📍 Current location: Midigama, Sri-Lanka</span>
-    </div>
         
     <div class="relative max-w-5xl mx-auto px-6 pt-32 md:pt-0 pb-16 md:pb-20 text-center w-full">
         <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-medium text-white leading-tight">
@@ -499,29 +490,17 @@
     </script>
 </section>
 
-<!-- 5. SERVICES ECOSYSTEM (Areas of Work) -->
-        <section id="services" class="py-12 md:py-24 bg-slate-900 border-t border-slate-800">
-            <div class="max-w-7xl mx-auto px-6">
-                
-                <div class="flex justify-center mb-12">
-                    <div class="inline-flex items-center gap-3 bg-teal-900/20 border border-teal-700/30 px-6 py-3 rounded-full shadow-[0_0_20px_rgba(13,148,136,0.1)]">
-                        <span class="relative flex h-3 w-3">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span>
-                        </span>
-                        <span class="text-teal-50 text-sm md:text-base font-medium tracking-wide">
-                            📍 Current location: Midigama, Sri-Lanka
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Updated heading and text -->
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Our Practice Space</h2>
-                    <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto">
-                        Choose the immersion format that resonates with you the most, and allow yourself to gently return to a state of harmony.
-                    </p>
-                </div>
+<!-- 5. ВИТРИНА ЭКОСИСТЕМЫ (Направления работы) -->
+<section id="services" class="py-12 md:py-24 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Обновленный заголовок и текст (без кнопок) -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif font-medium text-white mb-6">Пространство практик</h2>
+            <p class="text-base md:text-lg text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto">
+                Выберите формат погружения, который откликается вам больше всего, и позвольте себе бережно вернуться в состояние гармонии.
+            </p>
+        </div>
                 
                 <!-- SERVICES GRID (CATEGORIES) -->
                 <div>
@@ -1377,26 +1356,19 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 xl:gap-16 mb-20">
                 
-                <!-- Column 1: Brand & Location -->
-                <div class="flex flex-col">
-                    <a href="index-en.html" class="flex items-center gap-5 mb-8 group inline-flex">
-                        <img src="media/LogoR-removebg-preview.webp" alt="Logo" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
-                        <div class="flex flex-col justify-center">
-                            <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Ekaterina & Dmitriy</span>
-                            <span class="font-sans text-slate-400 text-xs tracking-[0.2em] uppercase">Savin</span>
-                        </div>
-                    </a>
-                    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
-                        A comprehensive approach to restoring inner balance through Himalayan singing bowls, Ayurvedic wisdom, and Jyotish astrology.
-                    </p>
-                    <div class="flex items-center gap-3 text-teal-500 text-sm font-sans bg-teal-900/10 border border-teal-900/30 p-4 rounded-2xl w-max">
-                        <span class="relative flex h-2.5 w-2.5 shrink-0">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500"></span>
-                        </span>
-                        <span>Current Location: Midigama, Sri-Lanka<br><span class="text-xs text-teal-600">(and online worldwide)</span></span>
-                    </div>
-                </div>
+               <!-- Column 1: Brand -->
+<div class="flex flex-col">
+    <a href="index-en.html" class="flex items-center gap-5 mb-8 group inline-flex">
+        <img src="media/LogoR-removebg-preview.webp" alt="Logo" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
+        <div class="flex flex-col justify-center">
+            <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Ekaterina & Dmitriy</span>
+            <span class="font-sans text-slate-400 text-xs tracking-[0.2em] uppercase">Savin</span>
+        </div>
+    </a>
+    <p class="text-slate-400 text-sm font-sans leading-relaxed mb-6">
+        A comprehensive approach to restoring inner balance through Himalayan singing bowls, Ayurvedic wisdom, and Jyotish astrology.
+    </p>
+</div>
 
                 <!-- Column 2: Direct Contact -->
                 <div class="flex flex-col">
@@ -1546,26 +1518,42 @@
         }
     </script>
 
-    <!-- MOBILE MENU SCRIPT -->
+    <!-- Mobile Menu Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const burgerBtn = document.getElementById('burger-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             const mobileLinks = document.querySelectorAll('.mobile-link');
 
-            // Open/close menu on burger click
             if (burgerBtn && mobileMenu) {
-                burgerBtn.addEventListener('click', function() {
+                // Open/close menu on burger click
+                burgerBtn.addEventListener('click', function(event) {
+                    event.stopPropagation(); 
                     mobileMenu.classList.toggle('hidden');
                     mobileMenu.classList.toggle('flex');
                 });
 
-                // Auto-close menu when a link is clicked
+                // Auto-close when clicking on any link
                 mobileLinks.forEach(link => {
                     link.addEventListener('click', function() {
                         mobileMenu.classList.add('hidden');
                         mobileMenu.classList.remove('flex');
                     });
+                });
+
+                // Smart closing for screen clicks
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        // 1. Clicked OUTSIDE the menu and NOT on the burger button
+                        const clickedOutside = !mobileMenu.contains(event.target) && !burgerBtn.contains(event.target);
+                        // 2. Clicked EXACTLY on the empty background of the menu
+                        const clickedOnEmptySpace = event.target === mobileMenu;
+
+                        if (clickedOutside || clickedOnEmptySpace) {
+                            mobileMenu.classList.add('hidden');
+                            mobileMenu.classList.remove('flex');
+                        }
+                    }
                 });
             }
         });
