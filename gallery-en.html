@@ -50,7 +50,8 @@
 <meta property="og:site_name" content="Savin Sound Space">
 
 </head>
-<body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden scroll-smooth">
+<!-- Added flex flex-col min-h-[100dvh] to body to keep footer at the bottom -->
+<body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden scroll-smooth flex flex-col min-h-[100dvh]">
 
     <!-- NAVIGATION BAR -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-sm border-b border-white/5">
@@ -118,7 +119,8 @@
     </nav>
 
     <!-- Photo & Video Grid (Masonry Collage) -->
-<main class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-12 md:pt-40 md:pb-20">
+<!-- Added flex-grow to main to keep footer at the bottom -->
+<main class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-12 md:pt-40 md:pb-20 flex-grow">
     
     <p class="text-slate-200 text-base md:text-lg md:text-xl mx-auto text-center mb-12 font-sans leading-relaxed">
         Moments from our vibroacoustic practices, group meditations, and retreats.
@@ -153,6 +155,7 @@
                 src="media/gallery/v1.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v1.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -174,6 +177,7 @@
                 src="media/gallery/v2.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v2.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -185,6 +189,7 @@
                 src="media/gallery/v3.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v3.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -201,6 +206,7 @@
                 src="media/gallery/v4.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v4.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -212,6 +218,7 @@
                 src="media/gallery/v5.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v5.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -228,6 +235,7 @@
                 src="media/gallery/v6.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v6.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -259,6 +267,7 @@
                 src="media/gallery/v7.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v7.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -275,6 +284,7 @@
                 src="media/gallery/v8.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v8.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -291,6 +301,7 @@
                 src="media/gallery/v9.mp4" 
                 controls 
                 preload="metadata"
+                poster="media/gallery/v9.jpg"
                 playsinline
                 class="w-full h-auto object-cover outline-none">
             </video>
@@ -472,6 +483,9 @@
 <script>
     // 1. Скрипт для мобильного меню
     document.addEventListener('DOMContentLoaded', () => {
+        // Принудительный скролл наверх при загрузке страницы (лечит баг сафари/хрома с прыжком вниз)
+        window.scrollTo(0, 0);
+
         const burgerBtn = document.getElementById('burger-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -552,6 +566,26 @@
     document.addEventListener('keydown', function(event) {
         if (event.key === "Escape" && modal && !modal.classList.contains('hidden')) {
             window.closeModal();
+        }
+    });
+
+    // 3. Умная автопауза видео при прокрутке
+    document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('video');
+        
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Если видео ушло за пределы экрана (не пересекается с экраном)
+                    if (!entry.isIntersecting) {
+                        entry.target.pause(); // Ставим на паузу
+                    }
+                });
+            }, { threshold: 0.1 }); // Срабатывает, когда видно меньше 10% видео
+
+            videos.forEach(video => {
+                observer.observe(video);
+            });
         }
     });
 </script>
