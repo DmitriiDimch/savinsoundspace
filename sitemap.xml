@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная (Лицо проекта) -->
+  <url>
+    <loc>https://savinsoundspace.com/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://savinsoundspace.com/index-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Локомотив 1: Джйотиш -->
+  <url>
+    <loc>https://savinsoundspace.com/jyotish.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://savinsoundspace.com/jyotish-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Локомотив 2: Аюрведа -->
+  <url>
+    <loc>https://savinsoundspace.com/ayurveda.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://savinsoundspace.com/ayurveda-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Интегральное сопровождение -->
+  <url>
+    <loc>https://savinsoundspace.com/integral.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://savinsoundspace.com/integral-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Звукотерапия (Оффлайн услуга) -->
+  <url>
+    <loc>https://savinsoundspace.com/sound-healing.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://savinsoundspace.com/sound-healing-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Галерея (Поведенческий фактор) -->
+  <url>
+    <loc>https://savinsoundspace.com/gallery.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://savinsoundspace.com/gallery-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>
