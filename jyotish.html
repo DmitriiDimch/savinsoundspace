@@ -93,7 +93,7 @@
             </div>
 
             <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
-            <button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
+            <button id="burger-btn" type="button" aria-label="Открыть меню" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="4" y1="12" x2="20" y2="12"></line>
                     <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -122,9 +122,9 @@
                 EN (English)
             </a>
         </div>
-    </nav>
+   </nav>
 
-
+    <main>
     <!-- ПЕРВЫЙ ЭКРАН (КОСМОС) -->
     <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
         
@@ -250,19 +250,19 @@
             <!-- Сетка растянута широким разрывом (gap-x-24) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 lg:gap-x-24 gap-y-14">
                 <div class="border-l-2 border-teal-800/40 pl-6 py-1">
-                    <h4 class="text-white font-serif text-3xl mb-4">Поиск своего пути</h4>
+                    <h3 class="text-white font-serif text-3xl mb-4">Поиск своего пути</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Непонимание истинных талантов, ощущение «я живу не своей жизнью» и поиск Дхармы (своего дела и предназначения).</p>
                 </div>
                 <div class="border-l-2 border-teal-800/40 pl-6 py-1">
-                    <h4 class="text-white font-serif text-3xl mb-4">Кризисы и тупики</h4>
+                    <h3 class="text-white font-serif text-3xl mb-4">Кризисы и тупики</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Периоды, когда все валится из рук. Анализ покажет, когда закончится этот этап, для чего он дан и какие уроки нужно извлечь.</p>
                 </div>
                 <div class="border-l-2 border-teal-800/40 pl-6 py-1">
-                    <h4 class="text-white font-serif text-3xl mb-4">Сфера отношений</h4>
+                    <h3 class="text-white font-serif text-3xl mb-4">Сфера отношений</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Поиск причин, почему повторяются одни и те же болезненные сценарии с партнерами, и мягкий выход из этого замкнутого круга.</p>
                 </div>
                 <div class="border-l-2 border-teal-800/40 pl-6 py-1">
-                    <h4 class="text-white font-serif text-3xl mb-4">Финансы и ресурс</h4>
+                    <h3 class="text-white font-serif text-3xl mb-4">Финансы и ресурс</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed font-sans">Где находится ваш финансовый потенциал и какие подсознательные или кармические действия блокируют материальное благополучие.</p>
                 </div>
             </div>
@@ -657,10 +657,11 @@
         
     </div>
 </section>
+    </main>
 
     <!-- 8. ПОДВАЛ (КОНТАКТЫ, ПОЧТА И ДИСКЛЕЙМЕРЫ) -->
 <footer class="bg-black pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
-    
+
     <!-- Декоративное свечение на фоне -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-teal-900/50 to-transparent"></div>
 

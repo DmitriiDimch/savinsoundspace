@@ -55,12 +55,20 @@
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
+
+        function forceScrollTop() {
+            if (!window.location.hash) {
+                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', forceScrollTop);
+        window.addEventListener('pageshow', forceScrollTop);
     </script>
 
     <!-- Иконки для вкладки и поиска -->
-<link rel="icon" type="image/png" href="media/favicon.png">
-<link rel="apple-touch-icon" href="media/favicon.png">
-
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="apple-touch-icon" href="media/favicon.png">
 </head>
 
 <body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden flex flex-col min-h-[100dvh]">

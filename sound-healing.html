@@ -93,7 +93,7 @@
             </div>
 
             <!-- МОБИЛЬНАЯ КНОПКА МЕНЮ (Бургер) -->
-            <button id="burger-btn" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
+            <button id="burger-btn" type="button" aria-label="Открыть меню" class="xl:hidden flex items-center justify-center text-white p-2 hover:text-teal-400 transition-colors ml-auto shrink-0">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="4" y1="12" x2="20" y2="12"></line>
                     <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -121,11 +121,12 @@
             <a href="sound-healing-en.html" class="text-slate-400 hover:text-white text-xs font-sans tracking-widest uppercase mt-2 transition-colors">
                 EN (English)
             </a>
-        </div>
+       </div>
     </nav>
 
-   <!-- ПЕРВЫЙ ЭКРАН (HERO) -->
-    <header class="relative min-h-[100dvh] flex items-start justify-center overflow-hidden pt-28 md:pt-36">
+    <main>
+        <!-- ПЕРВЫЙ ЭКРАН (HERO) -->
+        <header class="relative min-h-[100dvh] flex items-start justify-center overflow-hidden pt-28 md:pt-36">
         
         <!-- Фоновое изображение с чашами -->
         <div class="absolute inset-0 z-0">
@@ -1423,12 +1424,12 @@
                 <div class="space-y-10 md:w-1/3 text-center md:text-right">
                     <div class="relative">
                         <span class="absolute -top-4 -left-4 text-5xl text-slate-800 font-serif">"</span>
-                        <h4 class="text-white font-medium text-lg mb-2 relative z-10">Тело стало легким, как вода</h4>
+                        <h3 class="text-white font-medium text-lg mb-2 relative z-10">Тело стало легким, как вода</h3>
                         <p class="text-slate-300 text-sm italic relative z-10">«Ощущение, словно с плеч сняли тяжелый рюкзак, который я носила годами. Ушел мышечный панцирь, появилась легкость».</p>
                     </div>
                     <div class="relative">
                         <span class="absolute -top-4 -left-4 text-5xl text-slate-800 font-serif">"</span>
-                        <h4 class="text-white font-medium text-lg mb-2 relative z-10">Выключился белый шум</h4>
+                        <h3 class="text-white font-medium text-lg mb-2 relative z-10">Выключился белый шум</h3>
                         <p class="text-slate-300 text-sm italic relative z-10">«Голова стала пустой в хорошем смысле. Остановилась навязчивая мыслемешалка, и пришли четкие ответы на мои вопросы».</p>
                     </div>
                 </div>
@@ -1446,12 +1447,12 @@
                 <div class="space-y-10 md:w-1/3 text-center md:text-left">
                     <div class="relative">
                         <span class="absolute -top-4 -left-4 md:-left-8 text-5xl text-slate-800 font-serif">"</span>
-                        <h4 class="text-white font-medium text-lg mb-2 relative z-10">Глубокий сон без снотворных</h4>
+                        <h3 class="text-white font-medium text-lg mb-2 relative z-10">Глубокий сон без снотворных</h3>
                         <p class="text-slate-300 text-sm italic relative z-10">«Впервые за много месяцев я проспал всю ночь, не просыпаясь от тревожных мыслей. Утром было много энергии».</p>
                     </div>
                     <div class="relative">
                         <span class="absolute -top-4 -left-4 md:-left-8 text-5xl text-slate-800 font-serif">"</span>
-                        <h4 class="text-white font-medium text-lg mb-2 relative z-10">Эмоциональный рестарт</h4>
+                        <h3 class="text-white font-medium text-lg mb-2 relative z-10">Эмоциональный рестарт</h3>
                         <p class="text-slate-300 text-sm italic relative z-10">«Слезы текли сами по себе во время ванны, а после сеанса пришло невероятное чувство внутренней тишины и радости».</p>
                     </div>
                 </div>
@@ -1487,9 +1488,9 @@
 
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
             
-            <h3 class="font-serif text-4xl text-white mb-6 font-bold [text-shadow:_0_4px_12px_rgb(0_0_0_/_100%),_0_1px_3px_rgb(0_0_0_/_100%)]">
+            <h2 class="font-serif text-4xl text-white mb-6 font-bold [text-shadow:_0_4px_12px_rgb(0_0_0_/_100%),_0_1px_3px_rgb(0_0_0_/_100%)]">
                 Не знаете, какой формат выбрать?
-            </h3>
+            </h2>
             
             <p class="text-slate-300 font-sans text-base md:text-lg mb-12 font-medium [text-shadow:_0_3px_8px_rgb(0_0_0_/_100%),_0_1px_2px_rgb(0_0_0_/_100%)] max-w-2xl mx-auto leading-relaxed">
                 Каждая нервная система уникальна. Напишите нам, расскажите о своем состоянии, и мы бережно поможем подобрать ту практику, которая нужна вам именно сейчас.
@@ -1504,8 +1505,9 @@
                 </a>
             </div>
             
-        </div>
+       </div>
     </section>
+    </main>
 
    <!-- 8. ПОДВАЛ (КОНТАКТЫ, ПОЧТА И ДИСКЛЕЙМЕРЫ) -->
 <footer class="bg-black pt-24 pb-12 border-t border-white/5 relative overflow-hidden">

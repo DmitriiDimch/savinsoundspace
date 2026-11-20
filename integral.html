@@ -55,8 +55,15 @@
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
-        // Дополнительная защита от прокрутки при загрузке страницы
-        window.scrollTo(0, 0);
+
+        function forceScrollTop() {
+            if (!window.location.hash) {
+                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', forceScrollTop);
+        window.addEventListener('pageshow', forceScrollTop);
     </script>
 
     <!-- Иконки для вкладки и поиска -->
