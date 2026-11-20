@@ -53,8 +53,6 @@
     <!-- Иконки для вкладки и поиска -->
 <link rel="icon" type="image/png" href="media/favicon.png">
 <link rel="apple-touch-icon" href="media/favicon.png">
-<!-- Принудительное название сайта для Google -->
-<meta property="og:site_name" content="Savin Sound Space">
 
 </head>
 <body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden scroll-smooth">
@@ -129,7 +127,7 @@
 <!-- Сетка с фотографиями и видео (Коллаж) -->
 <main class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-12 md:pt-40 md:pb-20 w-full">
     
-    <p class="text-slate-200 text-base md:text-lg md:text-xl mx-auto text-center mb-12 font-sans leading-relaxed">
+    <p class="text-slate-200 text-base md:text-xl mx-auto text-center mb-12 font-sans leading-relaxed">
         Моменты наших виброакустических практик, групповых медитаций и ретритов.
     </p>
 
@@ -375,7 +373,7 @@
             
             <!-- Колонка 1: Бренд -->
             <div class="flex flex-col">
-                <a href="index.html" class="flex items-center gap-5 mb-8 group inline-flex">
+                <a href="index.html" class="inline-flex items-center gap-5 mb-8 group">
                     <img src="media/LogoR-removebg-preview.webp" alt="Логотип" class="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 origin-left">
                     <div class="flex flex-col justify-center">
                         <span class="font-serif text-white text-2xl tracking-[0.1em] uppercase leading-none mb-1.5">Екатерина & Дмитрий</span>
@@ -485,10 +483,9 @@
 <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ГАЛЕРЕИ                 -->
 <!-- ========================================== -->
 <div id="imageModal" class="fixed inset-0 z-[60] hidden bg-slate-950/90 backdrop-blur-sm items-center justify-center p-4 transition-opacity duration-300 opacity-0" onclick="closeModal()">
-    <button class="absolute top-4 right-6 md:top-6 md:right-8 text-white hover:text-slate-400 text-4xl font-light focus:outline-none z-50 transition-colors" onclick="closeModal()">&times;</button>
-    <img id="modalImage" src="" alt="Увеличенное изображение" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95" onclick="event.stopPropagation()">
+    <button type="button" aria-label="Закрыть" class="absolute top-4 right-6 md:top-6 md:right-8 text-white hover:text-slate-400 text-4xl font-light focus:outline-none z-50 transition-colors">&times;</button>
+    <img id="modalImage" alt="Увеличенное изображение" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain transition-transform duration-300 scale-95" onclick="event.stopPropagation()">
 </div>
-
 <!-- ========================================== -->
 <!-- СКРИПТЫ                                    -->
 <!-- ========================================== -->
@@ -568,7 +565,7 @@
         setTimeout(() => {
             modal.classList.add('hidden');
             modal.classList.remove('flex');
-            modalImg.src = '';
+            modalImg.removeAttribute('src');
         }, 300); 
         
         document.body.style.overflow = ''; 
